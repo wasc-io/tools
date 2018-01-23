@@ -1,0 +1,33 @@
+image: registry.nicolaischmid.de/jerzy/web-tools/image:latest
+
+cache:
+  paths:
+    - node_modules
+
+before_script:
+  - echo "//npm.nicolais.ch/:_authToken=\"$NPM_TOKEN\"" >> .npmrc
+  - echo "@private:registry=https://npm.nicolais.ch" >> .npmrc
+
+stages:
+  - security
+  - lint
+  - deploy
+
+security:
+  stage: security
+  script:
+    - nsp check
+
+lint:
+  stage: lint
+  script:
+    - yarn install
+    - yarn lint
+
+
+deploy:
+  stage: deploy
+  script:
+    - npm publish --registry https://npm.nicolais.ch
+  only:
+    - tags

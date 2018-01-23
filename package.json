@@ -1,0 +1,53 @@
+{
+  "name": "@private/wasc-tools",
+  "version": "0.0.1",
+  "author": "Nicolai Schmid <nicolai@schmid.uno>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write './**/*.{js,json}'"
+  },
+  "bin": {
+    "wasc-scripts": "./bin/index.js"
+  },
+  "dependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-wasc": "^0.1.9",
+    "eslint-plugin-prettier": "^2.5.0",
+    "prettier": "^1.10.2"
+  },
+  "eslintConfig": {
+    "extends": ["wasc", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+      "global-require": "off",
+      "no-console": "off",
+      "no-underscore-dangle": "off",
+      "import/no-dynamic-require": "off",
+      "import/newline-after-import": "off",
+      "import/prefer-default-export": "off",
+      "import/max-dependencies": "off"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": true,
+    "arrowParens": "always",
+    "overrides": [
+      {
+        "files": "**/*.json",
+        "options": {
+          "parser": "json"
+        }
+      },
+      {
+        "files": "test/**/*",
+        "options": {
+          "printWidth": 200
+        }
+      }
+    ]
+  }
+}
