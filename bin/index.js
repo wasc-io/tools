@@ -1,4 +1,4 @@
-#!/usr/bin / env node
+#!/usr/bin/env node
 
 // TODO: Find out minimal version of Node, uncomment the version check.
 // const currentNodeVersion = process.versions.node;
