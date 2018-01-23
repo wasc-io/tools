@@ -18,13 +18,11 @@
     "prettier": "^1.10.2"
   },
   "eslintConfig": {
-    "extends": [
-      "wasc",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ],
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "extends": ["wasc", "prettier"],
+    "plugins": ["prettier"],
     "rules": {
       "global-require": "off",
       "no-console": "off",
