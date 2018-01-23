@@ -8,20 +8,20 @@ const optionalArg = process.argv[3];
 const shouldFix = optionalArg !== '--check';
 
 const engine = new CLIEngine({
-  baseConfig,
-  ignorePattern,
-  useEslintrc: false,
-  ignore: false,
-  fix: shouldFix,
+    baseConfig,
+    ignorePattern,
+    useEslintrc: false,
+    ignore: false,
+    fix: shouldFix,
 });
 
 const report = engine.executeOnFiles([paths.projectSrc]);
 let errorCount = report.errorCount;
 
 if (shouldFix) {
-  // Write any fixes to disk
-  CLIEngine.outputFixes(report);
-  errorCount -= report.fixableErrorCount;
+    // Write any fixes to disk
+    CLIEngine.outputFixes(report);
+    errorCount -= report.fixableErrorCount;
 }
 
 // Print the linting results
@@ -30,5 +30,5 @@ const output = formatter(report.results);
 console.log(output);
 
 if (errorCount > 0) {
-  process.exit(1);
+    process.exit(1);
 }
