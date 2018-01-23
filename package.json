@@ -1,6 +1,6 @@
 {
   "name": "@private/wasc-tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Nicolai Schmid <nicolai@schmid.uno>",
   "license": "UNLICENSED",
   "scripts": {
@@ -18,8 +18,13 @@
     "prettier": "^1.10.2"
   },
   "eslintConfig": {
-    "extends": ["wasc", "prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "wasc",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "global-require": "off",
       "no-console": "off",
