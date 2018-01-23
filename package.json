@@ -8,7 +8,7 @@
     "format": "prettier --write './**/*.{js,json}'"
   },
   "bin": {
-    "wasc-scripts": "./bin/index.js"
+    "wasc-tools": "./bin/index.js"
   },
   "dependencies": {
     "eslint": "^4.16.0",
