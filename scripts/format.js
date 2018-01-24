@@ -1,4 +1,4 @@
-const { spawnSync } = require('child_process');
+const { sync } = require('cross-spawn');
 const paths = require('../config/paths');
 
 const supportedOptions = ['--check'];
@@ -13,10 +13,9 @@ const prettierArgs = [
     paths.selfPrettierIgnore,
     `./**/*.{js,json,gql,md}`,
 ];
-
-const result = spawnSync(paths.projectPrettier, prettierArgs, {
+const result = sync(paths.projectPrettier, prettierArgs, {
     env: process.env,
-    cwd: paths.projectSrc,
+    cwd: paths.projectRoot,
     stdio: 'inherit',
 });
 
