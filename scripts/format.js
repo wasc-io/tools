@@ -11,7 +11,7 @@ const prettierArgs = [
     paths.selfPrettierConfig,
     '--ignore-path',
     paths.selfPrettierIgnore,
-    `./**/*.{js,json,gql,md}`,
+    `./**/*.{js,json,graphql,md}`,
 ];
 const result = sync(paths.projectPrettier, prettierArgs, {
     env: process.env,
