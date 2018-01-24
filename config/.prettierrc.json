@@ -7,13 +7,7 @@
     "arrowParens": "always",
     "overrides": [
         {
-            "files": "**/*.json",
-            "options": {
-                "parser": "json"
-            }
-        },
-        {
-            "files": "test/**/*",
+            "files": "*test/**/*.js",
             "options": {
                 "printWidth": 200
             }
