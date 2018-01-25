@@ -9,6 +9,8 @@ switch (script) {
     case '--version': {
         const { version } = require('../package.json');
         console.log(version);
+
+        break;
     }
     default: {
         console.error(`Unknwon script "${script}".`);
