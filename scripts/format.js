@@ -13,7 +13,7 @@ const prettierArgs = [
     paths.selfPrettierIgnore,
     `./**/*.{js,json,graphql,md}`,
 ];
-execa(paths.projectPrettier, prettierArgs, {
+execa(paths.selfPrettier, prettierArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
