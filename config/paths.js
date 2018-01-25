@@ -13,7 +13,7 @@ module.exports = {
     projectSrc: resolveProjectDirectory('src'),
 
     projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
-    projectMocha: resolveProjectDirectory('node_moules/.bin/mocha'),
+    projectMocha: resolveProjectDirectory('node_modules/.bin/mocha'),
     projectNyc: resolveProjectDirectory('node_modules/.bin/nyc'),
 
     selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
