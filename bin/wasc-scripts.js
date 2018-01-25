@@ -6,6 +6,10 @@ switch (script) {
         require(`../scripts/${script}.js`);
         break;
     }
+    case '--version': {
+        const { version } = require('../package.json');
+        console.log(version);
+    }
     default: {
         console.error(`Unknwon script "${script}".`);
 
