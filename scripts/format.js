@@ -1,4 +1,4 @@
-const { sync } = require('cross-spawn');
+const execa = require('execa');
 const paths = require('../config/paths');
 
 const supportedOptions = ['--check'];
@@ -13,15 +13,13 @@ const prettierArgs = [
     paths.selfPrettierIgnore,
     `./**/*.{js,json,graphql,md}`,
 ];
-const result = sync(paths.projectPrettier, prettierArgs, {
+execa(paths.projectPrettier, prettierArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
+}).catch((error) => {
+    console.error('Command failed with the following error:\n');
+    console.error(error);
+    process.exit(1);
 });
 
-if (result.error) {
-    console.error('Command failed with the following error:\n');
-    console.error(result.error);
-
-    process.exit(1);
-}
