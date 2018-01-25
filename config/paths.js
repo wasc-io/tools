@@ -12,9 +12,9 @@ module.exports = {
     projectRoot,
     projectSrc: resolveProjectDirectory('src'),
 
-    selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
-    selfMocha: resolveSelfDirectory('node_moules/.bin/mocha'),
-    selfNyc: resolveSelfDirectory('node_modules/.bin/nyc'),
+    projectPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
+    projectMocha: resolveSelfDirectory('node_moules/.bin/mocha'),
+    projectNyc: resolveSelfDirectory('node_modules/.bin/nyc'),
 
     selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
     selfNodeModules: resolveSelfDirectory('node_modules'),

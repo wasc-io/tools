@@ -13,7 +13,7 @@ const prettierArgs = [
     paths.selfPrettierIgnore,
     `./**/*.{js,json,graphql,md}`,
 ];
-const result = sync(paths.selfPrettier, prettierArgs, {
+const result = sync(paths.projectPrettier, prettierArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',

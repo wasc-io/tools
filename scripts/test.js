@@ -2,14 +2,14 @@ const { sync } = require('cross-spawn');
 const paths = require('../config/paths');
 
 const mochaArgs = [
-    paths.selfMocha,
+    paths.projectMocha,
     '--timeout',
     225000,
     '--check-leaks',
     '--exit',
     './test/**/*.{js,ts}'
 ];
-const result = sync(paths.selfNyc, mochaArgs, {
+const result = sync(paths.projectNyc, mochaArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
