@@ -1,4 +1,4 @@
-const { sync } = require('cross-spawn');
+const execa = require('execa');
 const paths = require('../config/paths');
 
 const mochaArgs = [
@@ -9,15 +9,13 @@ const mochaArgs = [
     '--exit',
     './test/**/*.{js,ts}'
 ];
-const result = sync(paths.selfNyc, mochaArgs, {
+execa(paths.selfNyc, mochaArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
+}).catch((error) => {
+    console.error('Command failed with the following error:\n');
+    console.error(error);
+    process.exit(1);
 });
 
-if (result.error) {
-    console.error('Command failed with the following error:\n');
-    console.error(result.error);
-
-    process.exit(1);
-}
