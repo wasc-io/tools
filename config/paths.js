@@ -9,9 +9,13 @@ const resolveSelfDirectory = (relativePath) => path.resolve(selfRoot, relativePa
 module.exports = {
     projectBuild: resolveProjectDirectory('build'),
     projectIndexJs: resolveProjectDirectory('src/index.js'),
-    projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
     projectRoot,
     projectSrc: resolveProjectDirectory('src'),
+
+    selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
+    selfMocha: resolveSelfDirectory('node_moules/.bin/mocha'),
+    selfNyc: resolveSelfDirectory('node_modules/.bin/nyc'),
+
     selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
     selfNodeModules: resolveSelfDirectory('node_modules'),
     selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
