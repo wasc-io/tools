@@ -17,7 +17,7 @@ module.exports = {
     projectNyc: resolveProjectDirectory('node_modules/.bin/nyc'),
 
     selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
-    selfMocha: resolveSelfDirectory('node_moules/.bin/mocha'),
+    selfMocha: resolveSelfDirectory('node_modules/.bin/mocha'),
     selfNyc: resolveSelfDirectory('node_modules/.bin/nyc'),
 
     selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
