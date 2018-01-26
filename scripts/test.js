@@ -7,7 +7,7 @@ const mochaArgs = [
     225000,
     '--check-leaks',
     '--exit',
-    './test/**/*.{js,ts}'
+    './test/**/*.{js,ts}',
 ];
 execa(paths.selfNyc, mochaArgs, {
     env: process.env,
@@ -18,4 +18,3 @@ execa(paths.selfNyc, mochaArgs, {
     console.error(error);
     process.exit(1);
 });
-

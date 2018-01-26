@@ -22,4 +22,3 @@ execa(paths.selfPrettier, prettierArgs, {
     console.error(error);
     process.exit(1);
 });
-
