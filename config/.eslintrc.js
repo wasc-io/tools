@@ -2,7 +2,7 @@ module.exports = {
     extends: ['wasc', 'prettier'],
     plugins: ['prettier'],
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 2017,
     },
     // Turn off rules that are too strict
     // TODO: Remove these rules when we updated eslint-config-blogfoster
