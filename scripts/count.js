@@ -6,7 +6,7 @@ const { extname } = require('path');
 // Specify all initial files in a glob
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json'];
 
-async function run() {
+(async () => {
     let counters = { total: 0, source: 0, comment: 0, single: 0, block: 0, mixed: 0, empty: 0, todo: 0 };
 
     // Get paths from file glob
@@ -35,6 +35,4 @@ async function run() {
     );
     // Log files at the end with pretty JSON
     console.log(JSON.stringify(counters, null, '\t'));
-}
-
-run();
+})();
