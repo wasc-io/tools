@@ -1,6 +1,6 @@
 {
     "name": "@private/wasc-tools",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "author": "Nicolai Schmid <nicolai@schmid.uno>",
     "license": "UNLICENSED",
     "scripts": {
