@@ -4,7 +4,7 @@ const globby = require('globby');
 const { extname } = require('path');
 
 // Specify all initial files in a glob
-const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json'];
+const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
 (async () => {
     let counters = { total: 0, source: 0, comment: 0, single: 0, block: 0, mixed: 0, empty: 0, todo: 0 };
@@ -17,17 +17,30 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json'];
     await Promise.all(
         files.map(async (file) => {
             try {
-                const extension = extname(file).replace(/\./, '');
-                // Read file contents
-                const content = await readFile(file, 'utf-8');
 
-                // Measure stats for the file
-                const result = sloc(content, extension);
+                let extension = extname(file).replace(/\./, '');
 
-                // Add stats to total count
-                (Object.keys(counters)).map((key) => {
-                    counters[key] += result[key];
-                });
+                switch (extension) {
+                    case '':
+                    case 'graphql':
+                    case 'sh': {
+                        extension = undefined;
+
+                        break;
+                    }
+                }
+                if (extension) {
+                    // Read file contents
+                    const content = await readFile(file, 'utf-8');
+
+                    // Measure stats for the file
+                    const result = sloc(content, extension);
+
+                    // Add stats to total count
+                    (Object.keys(counters)).map((key) => {
+                        counters[key] += result[key];
+                    });
+                }
             } catch (error) {
                 console.log(error);
             }
