@@ -22,6 +22,7 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
                 let extension = extname(file);
 
                 switch (extension) {
+                    case '.graphql':
                     case '.md': {
                         extension = undefined;
                         break;
