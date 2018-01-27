@@ -5,6 +5,7 @@ switch (script) {
     case 'lint':
     case 'format':
     case 'count':
+    case 'todo':
     case 'test': {
         require(`../scripts/${script}.js`);
         break;
