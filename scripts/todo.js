@@ -19,7 +19,7 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
         files.map(async (file) => {
             try {
 
-                let extension = extname(file) //.replace(/\./, '');
+                let extension = extname(file);
 
                 switch (extension) {
                     case '.md': {
