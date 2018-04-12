@@ -17,6 +17,7 @@ module.exports = {
     target: 'node',
     node: false,
     externals: [nodeExternals()],
+    devtool: 'sourcemap',
     resolve: {
         modules: ['node_modules', paths.selfNodeModules],
     },
