@@ -28,7 +28,7 @@ if (mode === 'backend') {
         script: paths.projectBuild,
     });
 
-    compiler.watch(
+    const watching = compiler.watch(
         {
             aggregateTimeout: 300,
         },
@@ -58,7 +58,20 @@ if (mode === 'backend') {
             }
         }
     );
+    // Stop watching on kill
+    process.on('SIGINT', close.bind(null, watching));
+    process.on('SIGUSR1', close.bind(null, watching));
+    process.on('SIGUSR2', close.bind(null, watching));
+
 } else if (mode === 'frontend') {
     console.error('Frontend not supported yet. Stay tuned!');
     process.exit(1);
+}
+
+/**
+ * Handler to stop webpack watching, when closing the script
+ * @param {Object} watching The watching object from webpack
+ */
+function close(watching) {
+    watching.close();
 }
