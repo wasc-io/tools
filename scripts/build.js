@@ -4,11 +4,12 @@ const paths = require('../config/paths');
 const webpackConfigBackendProd = require(paths.selfWebpackConfigBackendProd);
 const webpackConfigFrontendProd = require(paths.selfwebpackConfigFrontendProd);
 
-
 const mode = process.argv[3];
 
 if (!mode) {
-    console.error('Please provide if the script should be run with the frontend or backend configuration');
+    console.error(
+        'Please provide if the script should be run with the frontend or backend configuration'
+    );
     console.error('wasc-tools build [frontend|backend]');
 }
 

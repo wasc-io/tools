@@ -7,7 +7,16 @@ const { extname } = require('path');
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
 (async () => {
-    let counters = { total: 0, source: 0, comment: 0, single: 0, block: 0, mixed: 0, empty: 0, todo: 0 };
+    let counters = {
+        total: 0,
+        source: 0,
+        comment: 0,
+        single: 0,
+        block: 0,
+        mixed: 0,
+        empty: 0,
+        todo: 0,
+    };
 
     // Get paths from file glob
     const files = await globby(glob, {
@@ -17,8 +26,9 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
     await Promise.all(
         files.map(async (file) => {
             try {
-
-                let extension = extname(file).replace(/\./, '').toLowerCase();
+                let extension = extname(file)
+                    .replace(/\./, '')
+                    .toLowerCase();
 
                 switch (extension) {
                     case '':
@@ -45,7 +55,7 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
                     }
 
                     // Add stats to total count
-                    (Object.keys(counters)).map((key) => {
+                    Object.keys(counters).map((key) => {
                         counters[key] += result[key];
                     });
                 }

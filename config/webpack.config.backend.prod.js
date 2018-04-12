@@ -36,24 +36,22 @@ module.exports = {
                                     targets: {
                                         node: '8.2',
                                     },
-                                }
-                            ]
+                                },
+                            ],
                         ],
-                        plugins: [
-                            require.resolve('babel-plugin-syntax-trailing-function-commas'),
-                        ]
-                    }
+                        plugins: [require.resolve('babel-plugin-syntax-trailing-function-commas')],
+                    },
                 },
             },
             {
                 exclude: /node_modules/,
                 test: /\.graphql$/,
                 use: [{ loader: 'graphql-import-loader' }],
-            }
-        ]
+            },
+        ],
     },
     plugins: [
-        new CleanWebpackPlugin([paths.projectBuild], {root: paths.projectRoot}),
+        new CleanWebpackPlugin([paths.projectBuild], { root: paths.projectRoot }),
         new webpack.BannerPlugin({
             banner: 'require("source-map-support").install();',
             raw: true,
@@ -62,7 +60,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: '.env' },
             // { from: './src/graphql/public/types/*.graphql', to: path.join(BUILD, 'graphql/public/types') },
-        ])
+        ]),
     ],
     devtool: 'sourcemap',
 };
