@@ -18,6 +18,7 @@ module.exports = {
     node: false,
     externals: [nodeExternals()],
     devtool: 'sourcemap',
+    mode: 'production',
     resolve: {
         modules: ['node_modules', paths.selfNodeModules],
     },
