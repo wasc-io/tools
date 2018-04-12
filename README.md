@@ -22,3 +22,13 @@ The suggested usage is with NPM scripts like so:
     "todo": "wasc-tools tood",
 }
 ```
+
+## Usage with IDE tooling
+The project exports a `prettier.js` and `eslint.js` file with the accepted configurations. In your project just add an `.eslintrc.js` file:
+```javascript
+module.exports = require('@private/wasc-tools/eslint');
+```
+and a `prettier.config.js`:
+```javascript
+module.exports = require('@private/wasc-tools/prettier');
+```
