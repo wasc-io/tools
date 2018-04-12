@@ -56,12 +56,6 @@ if (mode === 'backend') {
             if (stats.hasWarnings()) {
                 console.warn(info.warnings);
             }
-
-            console.log(
-                stats.toString({
-                    colors: true,
-                })
-            );
         }
     );
 } else if (mode === 'frontend') {

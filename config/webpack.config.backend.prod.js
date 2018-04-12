@@ -5,6 +5,7 @@ const nodeExternals = require('webpack-node-externals');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
     bail: true,
@@ -62,6 +63,13 @@ module.exports = {
             { from: '.env' },
             // { from: './src/graphql/public/types/*.graphql', to: path.join(BUILD, 'graphql/public/types') },
         ]),
+        new ProgressBarPlugin({
+            format:
+                '\u001b[90m\u001b[44mBuild\u001b[49m\u001b[39m [:bar] \u001b[32m\u001b[1m:percent\u001b[22m\u001b[39m (:elapseds) \u001b[2m:msg\u001b[22m',
+            renderThrottle: 100,
+            summary: false,
+            clear: true,
+        }),
     ],
     devtool: 'sourcemap',
 };
