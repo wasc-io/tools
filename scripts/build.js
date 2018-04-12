@@ -11,6 +11,7 @@ if (!mode) {
         'Please provide if the script should be run with the frontend or backend configuration'
     );
     console.error('wasc-tools build [frontend|backend]');
+    process.exit(1);
 }
 
 if (!existsSync(paths.projectIndexJs)) {
