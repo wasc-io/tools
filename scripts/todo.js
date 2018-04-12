@@ -15,41 +15,19 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
         gitignore: true,
     });
 
-    const notSupportedExtensions = [
-        '.graphql',
-        '.md',
-        '.ico',
-        '.png',
-        '.jpg',
-        '.gif',
-        '.jpeg',
-        '.json',
-    ];
-
     await Promise.all(
         files.map(async (file) => {
             try {
+                const extension = extname(file).toLowerCase();
 
-                let extension = extname(file);
-
-
-                if (notSupportedExtensions.indexOf(extension) !== -1) {
-                    extension = undefined;
-                }
-
-                if (extension) {
+                if (leasot.isExtSupported(extension)) {
                     // Read file contents
                     const content = await readFile(file, 'utf-8');
 
-                    // console.log(extension);
                     // Measure stats for the file
                     const result = leasot.parse({ ext: extension, content, fileName: file });
 
                     todos = [...todos, ...result];
-                    // // Add stats to total count
-                    // (Object.keys(counters)).map((key) => {
-                    //     counters[key] += result[key];
-                    // });
                 }
             } catch (error) {
                 console.log(error);
