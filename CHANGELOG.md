@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.3.0...v1.3.1) (2018-04-12)
+
+
+### Bug Fixes
+
+* added source-map support to webpack config for accurate stack traces ([4a91182](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/4a91182))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.2.0...v1.3.0) (2018-04-12)
 
