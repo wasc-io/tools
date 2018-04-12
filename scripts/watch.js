@@ -1,5 +1,5 @@
 const { existsSync } = require('fs');
-const nodemon = require('nodmon');
+const nodemon = require('nodemon');
 const webpack = require('webpack');
 const paths = require('../config/paths');
 const webpackConfigBackendProd = require(paths.selfWebpackConfigBackendProd);
