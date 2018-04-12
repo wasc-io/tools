@@ -28,43 +28,43 @@ if (mode === 'backend') {
         script: paths.projectBuild,
     });
 
-    compiler.watch({
-        aggregateTimeout: 300,
-    }, (error, stats) => {
-        // Handle webpack configuration errors
-        if (err) {
-            console.error(err.stack || err);
-            if (err.details) {
-                console.error(err.details);
+    compiler.watch(
+        {
+            aggregateTimeout: 300,
+        },
+        (error, stats) => {
+            // Handle webpack configuration errors
+            if (err) {
+                console.error(err.stack || err);
+                if (err.details) {
+                    console.error(err.details);
+                }
+
+                process.exit(1);
             }
 
-            process.exit(1);
+            const info = stats.toJson();
+
+            // Handle compilation errors
+            if (stats.hasErrors()) {
+                console.error(info.errors);
+
+                process.exit(1);
+            }
+
+            // Print any warnings before anything else
+            if (stats.hasWarnings()) {
+                console.warn(info.warnings);
+            }
+
+            console.log(
+                stats.toString({
+                    colors: true,
+                })
+            );
         }
-
-        const info = stats.toJson();
-
-        // Handle compilation errors
-        if (stats.hasErrors()) {
-            console.error(info.errors);
-
-            process.exit(1);
-        }
-
-        // Print any warnings before anything else
-        if (stats.hasWarnings()) {
-            console.warn(info.warnings);
-        }
-
-        console.log(
-            stats.toString({
-                colors: true,
-            })
-        );
-    });
-
-
+    );
 } else if (mode === 'frontend') {
     console.error('Frontend not supported yet. Stay tuned!');
     process.exit(1);
 }
-
