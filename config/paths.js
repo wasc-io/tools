@@ -24,4 +24,7 @@ module.exports = {
     selfNodeModules: resolveSelfDirectory('node_modules'),
     selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
     selfPrettierIgnore: resolveSelfDirectory('config/.prettierignore'),
+
+    selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
+    selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),
 };

@@ -2,6 +2,7 @@ const script = process.argv.length > 1 ? process.argv[2] : undefined;
 const chalk = require('chalk');
 
 switch (script) {
+    case 'build':
     case 'lint':
     case 'format':
     case 'count':
@@ -22,6 +23,8 @@ switch (script) {
         console.log(chalk`
     wasc-tools [script]
 
+    ${chalk.red('build')}  Build the project using webpack for usage with newer JS Syntax. 'backend' or 'frontend'
+                           flag is required to determine for what target to build
     ${chalk.red('lint')}   Liting all supported files with Eslint
     ${chalk.red('format')} Format all supported files with Prettier
     ${chalk.red('test')}   Running tests in test/ directory with mocha
