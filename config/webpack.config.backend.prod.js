@@ -53,7 +53,12 @@ module.exports = {
         ],
     },
     plugins: [
-        new CleanWebpackPlugin([paths.projectBuild], { root: paths.projectRoot }),
+        // TODO Get this working along nodemon
+        // new CleanWebpackPlugin([paths.projectBuild], {
+        //     root: paths.projectRoot,
+        //     watch: true,
+        //     beforeEmit: true,
+        // }),
         new webpack.BannerPlugin({
             banner: 'require("source-map-support").install();',
             raw: true,
