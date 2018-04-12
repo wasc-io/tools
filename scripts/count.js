@@ -18,7 +18,7 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
         files.map(async (file) => {
             try {
 
-                let extension = extname(file).replace(/\./, '');
+                let extension = extname(file).replace(/\./, '').toLowerCase();
 
                 switch (extension) {
                     case '':
@@ -34,7 +34,15 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
                     const content = await readFile(file, 'utf-8');
 
                     // Measure stats for the file
-                    const result = sloc(content, extension);
+                    let result;
+                    try {
+                        result = sloc(content, extension);
+                    } catch (error) {
+                        // Only throw if its not a non file type supported error
+                        if (!/File\sextension/gi.test(error.message)) throw error;
+
+                        return;
+                    }
 
                     // Add stats to total count
                     (Object.keys(counters)).map((key) => {
