@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.3.2...v1.4.0) (2018-04-12)
+
+
+### Bug Fixes
+
+* exit build script if mode is not provided ([8bc1683](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/8bc1683))
+
+
+### Features
+
+* added mode: production to build command ([a60658c](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/a60658c))
+* added watch script for watching build tasks and serving automatically with nodemon ([9416781](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/9416781))
+
+
+
 <a name="1.3.2"></a>
 ## [1.3.2](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.3.1...v1.3.2) (2018-04-12)
 

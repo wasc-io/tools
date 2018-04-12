@@ -1,37 +1,37 @@
 {
-    "name": "@private/wasc-tools",
-    "version": "1.3.2",
-    "author": "Nicolai Schmid <nicolai@schmid.uno>",
-    "license": "UNLICENSED",
-    "scripts": {
-        "lint": "eslint -c ./config/.eslintrc.js .",
-        "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'"
-    },
-    "bin": {
-        "wasc-tools": "./bin/index.js"
-    },
-    "dependencies": {
-        "babel-core": "^6.26.0",
-        "babel-plugin-inline-import": "^2.0.6",
-        "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
-        "babel-preset-env": "^1.6.1",
-        "chalk": "^2.3.0",
-        "clean-webpack-plugin": "^0.1.19",
-        "copy-webpack-plugin": "^4.5.1",
-        "eslint": "^4.16.0",
-        "eslint-config-prettier": "^2.9.0",
-        "eslint-config-wasc": "^0.1.9",
-        "eslint-plugin-prettier": "^2.5.0",
-        "execa": "^0.9.0",
-        "globby": "^7.1.1",
-        "leasot": "^4.13.0",
-        "mocha": "^5.0.0",
-        "nodemon": "^1.17.3",
-        "nyc": "^11.4.1",
-        "prettier": "^1.10.2",
-        "sloc": "^0.2.0",
-        "then-fs": "^2.0.0",
-        "webpack": "^4.5.0",
-        "webpack-node-externals": "^1.7.2"
-    }
+  "name": "@private/wasc-tools",
+  "version": "1.4.0",
+  "author": "Nicolai Schmid <nicolai@schmid.uno>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint -c ./config/.eslintrc.js .",
+    "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'"
+  },
+  "bin": {
+    "wasc-tools": "./bin/index.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.3.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-wasc": "^0.1.9",
+    "eslint-plugin-prettier": "^2.5.0",
+    "execa": "^0.9.0",
+    "globby": "^7.1.1",
+    "leasot": "^4.13.0",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.17.3",
+    "nyc": "^11.4.1",
+    "prettier": "^1.10.2",
+    "sloc": "^0.2.0",
+    "then-fs": "^2.0.0",
+    "webpack": "^4.5.0",
+    "webpack-node-externals": "^1.7.2"
+  }
 }
