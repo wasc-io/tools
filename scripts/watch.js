@@ -34,10 +34,10 @@ if (mode === 'backend') {
         },
         (error, stats) => {
             // Handle webpack configuration errors
-            if (err) {
-                console.error(err.stack || err);
-                if (err.details) {
-                    console.error(err.details);
+            if (error) {
+                console.error(error.stack || error);
+                if (error.details) {
+                    console.error(error.details);
                 }
 
                 process.exit(1);
