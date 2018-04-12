@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.4.2...v1.5.0) (2018-04-12)
+
+
+### Bug Fixes
+
+* removed cleanwebpack plugin, since nodemon throws if build folder is not existent ([e6c6bd1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/e6c6bd1))
+
+
+### Features
+
+* added progressBarPlugin to webpack config ([f54ab6c](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/f54ab6c))
+* **watch:** added closing handler to stop webpacks watching ([b7dc272](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/b7dc272))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.4.1...v1.4.2) (2018-04-12)
 
