@@ -4,7 +4,7 @@ const paths = require('./paths');
 const nodeExternals = require('webpack-node-externals');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
