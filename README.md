@@ -23,6 +23,8 @@ The suggested usage is with NPM scripts like so:
     "todo": "wasc-tools todo",
 }
 ```
+## **!!!** IMPORTANT Note
+For usage with the integrated start and build commands, you need to install the package `source-map-support`. It replaces all stacktraces, with resolved locations from the compiled source maps.
 
 ## Usage with IDE tooling
 The project exports a `prettier.js` and `eslint.js` file with the accepted configurations. In your project just add an `.eslintrc.js` file:
