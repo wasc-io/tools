@@ -20,7 +20,7 @@ The suggested usage is with NPM scripts like so:
     "format": "wasc-tools format",
     "test": "wasc-tools test",
     "count": "wasc-tools count",
-    "todo": "wasc-tools tood",
+    "todo": "wasc-tools todo",
 }
 ```
 
