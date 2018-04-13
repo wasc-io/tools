@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.6.0...v1.6.1) (2018-04-13)
+
+
+### Bug Fixes
+
+* added babel-loader to dependencies ([14914eb](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/14914eb))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.5.1...v1.6.0) (2018-04-13)
 
