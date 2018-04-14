@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.6.1...v1.7.0) (2018-04-14)
+
+
+### Features
+
+* readded clean-webpack-plugin for backend config ([d79c1d4](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/d79c1d4))
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.6.0...v1.6.1) (2018-04-13)
 
