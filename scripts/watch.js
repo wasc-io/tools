@@ -2,6 +2,7 @@ const { existsSync } = require('fs');
 const nodemon = require('nodemon');
 const webpack = require('webpack');
 const paths = require('../config/paths');
+const { join } = require('path');
 const webpackConfigBackendProd = require(paths.selfWebpackConfigBackendProd);
 const webpackConfigFrontendProd = require(paths.selfwebpackConfigFrontendProd);
 
@@ -26,6 +27,11 @@ const compiler = webpack(mode === 'backend' ? webpackConfigBackendProd : webpack
 if (mode === 'backend') {
     nodemon({
         script: paths.projectBuild,
+        execArgs: [
+            '-r',
+            // join(paths.selfNodeModules, 'dotenv', 'config')
+            'dotenv/config',
+        ]
     });
 
     const watching = compiler.watch(

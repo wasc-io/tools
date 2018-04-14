@@ -4,7 +4,7 @@ const paths = require('./paths');
 const nodeExternals = require('webpack-node-externals');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
@@ -54,11 +54,11 @@ module.exports = {
     },
     plugins: [
         // TODO Get this working along nodemon
-        // new CleanWebpackPlugin([paths.projectBuild], {
-        //     root: paths.projectRoot,
-        //     watch: true,
-        //     beforeEmit: true,
-        // }),
+        new CleanWebpackPlugin([paths.projectBuild], {
+            root: paths.projectRoot,
+            watch: true,
+            beforeEmit: true,
+        }),
         new webpack.BannerPlugin({
             banner: 'require("source-map-support").install();',
             raw: true,
