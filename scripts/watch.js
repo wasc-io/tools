@@ -25,15 +25,6 @@ if (!existsSync(paths.projectIndexJs)) {
 const compiler = webpack(mode === 'backend' ? webpackConfigBackendProd : webpackConfigFrontendProd);
 
 if (mode === 'backend') {
-    nodemon({
-        script: paths.projectBuild,
-        execArgs: [
-            '-r',
-            // join(paths.selfNodeModules, 'dotenv', 'config')
-            'dotenv/config',
-        ]
-    });
-
     const watching = compiler.watch(
         {
             aggregateTimeout: 300,
