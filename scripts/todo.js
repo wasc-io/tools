@@ -7,7 +7,7 @@ const paths = require('../config/paths');
 // Specify all initial files in a glob
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
-(async () => {
+module.exports = async (argv) => {
     let todos = [];
 
     // Get paths from file glob
@@ -34,6 +34,8 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
             }
         })
     );
+
+    // TODO maybe cli options for different todo reporters
     // Generate markdown
     const output = leasot.reporter(todos, {
         reporter: 'markdown',
@@ -41,4 +43,4 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
 
     // Write TODOs file
     await writeFile(`${paths.projectRoot}/TODOs.md`, output);
-})();
+}

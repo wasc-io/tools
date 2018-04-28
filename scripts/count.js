@@ -6,7 +6,7 @@ const { extname } = require('path');
 // Specify all initial files in a glob
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
-(async () => {
+module.exports = async (argv) => {
     let counters = {
         total: 0,
         source: 0,
@@ -66,4 +66,4 @@ const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./
     );
     // Log files at the end with pretty JSON
     console.log(JSON.stringify(counters, null, '\t'));
-})();
+};
