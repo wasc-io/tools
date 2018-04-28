@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.8.0"></a>
+# [1.8.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.7.1...v1.8.0) (2018-04-28)
+
+
+### Features
+
+* updated whole cli to yargs with more specific cli options and better help management ([46cca44](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/46cca44))
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.7.0...v1.7.1) (2018-04-27)
 
