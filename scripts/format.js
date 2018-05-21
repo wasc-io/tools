@@ -1,10 +1,6 @@
 const execa = require('execa');
 const paths = require('../config/paths');
 
-const supportedOptions = ['--check'];
-const userOption = process.argv.length > 2 ? process.argv[3] : undefined;
-const option = supportedOptions.includes(userOption) ? userOption : undefined;
-
 module.exports = (argv) => {
     const prettierArgs = [
         argv['dry-run'] ? '--list-different' : '--write',

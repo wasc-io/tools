@@ -1,8 +1,6 @@
 const { existsSync } = require('fs');
-const nodemon = require('nodemon');
 const webpack = require('webpack');
 const paths = require('../config/paths');
-const { join } = require('path');
 
 module.exports = async (argv) => {
     const mode = argv._[1];
@@ -54,8 +52,8 @@ module.exports = async (argv) => {
         process.on('SIGUSR2', close.bind(null, watching));
 
     } else if (mode === 'frontend') {
-        const webpackConfigFrontendProd = require(paths.selfwebpackConfigFrontendProd);
-        const compiler = webpack(webpackConfigBackendProd);
+        // const webpackConfigFrontendProd = require(paths.selfwebpackConfigFrontendProd);
+        // const compiler = webpack(webpackConfigFrontendProd);
         console.error('Frontend not supported yet. Stay tuned!');
         process.exit(1);
     }
