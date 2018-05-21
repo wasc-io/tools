@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.8.1"></a>
+## [1.8.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.8.0...v1.8.1) (2018-05-21)
+
+
+### Bug Fixes
+
+* removed unused variables for linting ([3c22656](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/3c22656))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.7.1...v1.8.0) (2018-04-28)
 
