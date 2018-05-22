@@ -29,6 +29,6 @@ lint:
 deploy:
   stage: deploy
   script:
-    - npm publish
+    - npm publish --access=public
   only:
     - tags
