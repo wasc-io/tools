@@ -6,6 +6,7 @@ cache:
 
 before_script:
   - echo "//npm.nicolais.ch/:_authToken=\"$NPM_TOKEN\"" >> .npmrc
+  - echo "//registry.npmjs.org/:_authToken=\"$PUBLIC_NPM_TOKEN\"" >> .npmrc
   - echo "@private:registry=https://npm.nicolais.ch" >> .npmrc
 
 stages:
