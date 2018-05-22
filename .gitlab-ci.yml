@@ -29,6 +29,6 @@ lint:
 deploy:
   stage: deploy
   script:
-    - npm publish --registry https://npm.nicolais.ch
+    - npm publish
   only:
     - tags
