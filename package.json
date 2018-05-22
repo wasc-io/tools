@@ -1,8 +1,11 @@
 {
-  "name": "@private/wasc-tools",
+  "name": "@wasc/tools",
   "version": "1.8.1",
-  "author": "Nicolai Schmid <nicolai@schmid.uno>",
-  "license": "UNLICENSED",
+  "author": "wasc GmbH",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint -c ./config/.eslintrc.js .",
     "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'"

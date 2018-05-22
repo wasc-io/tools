@@ -23,9 +23,9 @@ For usage with the integrated start and build commands, you need to install the 
 ## Usage with IDE tooling
 The project exports a `prettier.js` and `eslint.js` file with the accepted configurations. In your project just add an `.eslintrc.js` file:
 ```javascript
-module.exports = require('@private/wasc-tools/eslint');
+module.exports = require('@wasc/tools/eslint');
 ```
 and a `prettier.config.js`:
 ```javascript
-module.exports = require('@private/wasc-tools/prettier');
+module.exports = require('@wasc/tools/prettier');
 ```
