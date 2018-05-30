@@ -35,7 +35,7 @@ const argv = require('yargs')
                     .positional('env', {
                         describe: 'should dotenv be preloaded with the node process',
                         alias: 'e',
-                        type: boolean,
+                        type: 'boolean',
                         default: true,
                     })
             })
