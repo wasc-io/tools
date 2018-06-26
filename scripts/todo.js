@@ -7,7 +7,7 @@ const paths = require('../config/paths');
 // Specify all initial files in a glob
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
-module.exports = async argv => {
+module.exports = async () => {
   let todos = [];
 
   // Get paths from file glob

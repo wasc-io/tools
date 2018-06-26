@@ -1,10 +1,10 @@
 const webpack = require('webpack');
-const paths = require('./paths');
 
 const nodeExternals = require('webpack-node-externals');
 
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const NodemonPlugin = require('nodemon-webpack-plugin');
+const paths = require('./paths');
 
 module.exports = argv => {
   // Assemble nodemon configuration from cli options
@@ -80,6 +80,5 @@ module.exports = argv => {
         nodeArgs,
       }),
     ],
-    devtool: 'sourcemap',
   };
 };

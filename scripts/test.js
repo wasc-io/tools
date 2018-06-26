@@ -1,7 +1,7 @@
 const execa = require('execa');
 const paths = require('../config/paths');
 
-module.exports = argv => {
+module.exports = () => {
   // TODO Implement all options to yargs cli
   const mochaArgs = [
     paths.selfMocha,

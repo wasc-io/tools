@@ -2,6 +2,14 @@ const { existsSync } = require('fs');
 const webpack = require('webpack');
 const paths = require('../config/paths');
 
+/**
+ * Handler to stop webpack watching, when closing the script
+ * @param {Object} watching The watching object from webpack
+ */
+function close(watching) {
+  watching.close();
+}
+
 module.exports = async argv => {
   const mode = argv._[1];
 
@@ -55,13 +63,5 @@ module.exports = async argv => {
     // const compiler = webpack(webpackConfigFrontendProd);
     console.error('Frontend not supported yet. Stay tuned!');
     process.exit(1);
-  }
-
-  /**
-   * Handler to stop webpack watching, when closing the script
-   * @param {Object} watching The watching object from webpack
-   */
-  function close(watching) {
-    watching.close();
   }
 };

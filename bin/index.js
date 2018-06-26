@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
 require('dotenv').config();
+
 const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split('.');
 const major = semver[0];
 
 if (major < 6) {
-  console.error('You are running Node ' + currentNodeVersion + '.');
+  console.error('You are running Node ' + currentNodeVersion + '.'); // eslint-disable-line prefer-template
   console.error('Please update your version of Node to 6 or higher.');
 
   process.exit(1);
 }
 
-const argv = require('yargs')
+const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .usage(
     '$0 <command> [options], a tool for creating front- and backend javascript projects alike, with builtin prettier, eslint and babel-compiling',
   )
@@ -25,8 +26,8 @@ const argv = require('yargs')
   .command('watch', 'build and rebuild the project on source changes', yargs => {
     yargs
       .command('frontend', 'for frontend projects [not supported yet]')
-      .command('backend', 'for nodeJS based backend projects', yargs => {
-        yargs
+      .command('backend', 'for nodeJS based backend projects', yargs2 => {
+        yargs2
           .positional('debug', {
             descibe: 'enable the node debugging protocol in the nodemon process',
             alias: 'd',

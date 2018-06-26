@@ -6,8 +6,8 @@ const { extname } = require('path');
 // Specify all initial files in a glob
 const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
 
-module.exports = async argv => {
-  let counters = {
+module.exports = async () => {
+  const counters = {
     total: 0,
     source: 0,
     comment: 0,
@@ -38,6 +38,9 @@ module.exports = async argv => {
 
             break;
           }
+          default: {
+            break;
+          }
         }
         if (extension) {
           // Read file contents
@@ -55,7 +58,7 @@ module.exports = async argv => {
           }
 
           // Add stats to total count
-          Object.keys(counters).map(key => {
+          Object.keys(counters).forEach(key => {
             counters[key] += result[key];
           });
         }

@@ -1,18 +1,18 @@
 const { CLIEngine } = require('eslint');
 const paths = require('../config/paths');
+
 const baseConfig = require(paths.selfESLintConfig);
 
 module.exports = argv => {
   const engine = new CLIEngine({
     baseConfig,
-    ignorePattern,
     useEslintrc: false,
     ignore: false,
     fix: argv.write,
   });
 
   const report = engine.executeOnFiles([paths.projectSrc]);
-  let errorCount = report.errorCount;
+  let { errorCount } = report;
 
   if (argv.write) {
     // Write any fixes to disk
