@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.9.2...v1.10.0) (2018-06-26)
+
+
+### Features
+
+* updated eslint-config to newest standards ([6cc6765](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/6cc6765))
+* updated prettier-config to align with new airbnb eslint-config ([3df8786](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/3df8786))
+
+
+
 <a name="1.9.2"></a>
 ## [1.9.2](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.9.1...v1.9.2) (2018-06-24)
 
