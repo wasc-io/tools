@@ -1,13 +1,13 @@
 module.exports = {
-    extends: ['airbnb', 'prettier'],
-    plugins: ['import', 'jsx-a11y', 'react', 'prettier'],
-    parserOptions: {
-        ecmaVersion: 2017,
-    },
-    // Turn off rules that are too strict
-    rules: {
-        'global-require': 'off',
-        'no-console': 'off',
-        'import/no-dynamic-require': 'off',
-    },
+  extends: ['airbnb', 'prettier'],
+  plugins: ['import', 'jsx-a11y', 'react', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 2017,
+  },
+  // Turn off rules that are too strict
+  rules: {
+    'global-require': 'off',
+    'no-console': 'off',
+    'import/no-dynamic-require': 'off',
+  },
 };

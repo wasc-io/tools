@@ -1,16 +1,16 @@
 {
-    "printWidth": 100,
-    "tabWidth": 2,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "jsxBracketSameLine": true,
-    "arrowParens": "avoid",
-    "overrides": [
-        {
-            "files": "*test/**/*.js",
-            "options": {
-                "printWidth": 200
-            }
-        }
-    ]
+  "printWidth": 100,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*test/**/*.js",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
 }
