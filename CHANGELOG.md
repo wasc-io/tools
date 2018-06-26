@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.10.2...v1.11.0) (2018-06-26)
+
+
+### Features
+
+* **lint:** changed eslints execute path to project root ([f4ae588](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/f4ae588))
+
+
+
 <a name="1.10.2"></a>
 ## [1.10.2](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.10.1...v1.10.2) (2018-06-26)
 
