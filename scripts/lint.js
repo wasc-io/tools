@@ -11,7 +11,7 @@ module.exports = argv => {
     fix: argv.write,
   });
 
-  const report = engine.executeOnFiles([paths.projectSrc]);
+  const report = engine.executeOnFiles([paths.projectRoot]);
   let { errorCount } = report;
 
   if (argv.write) {
