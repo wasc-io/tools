@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.11.0...v1.12.0) (2018-07-10)
+
+
+### Features
+
+* babel compile object spread operator ([cda209b](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/cda209b))
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.10.2...v1.11.0) (2018-06-26)
 
