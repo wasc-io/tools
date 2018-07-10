@@ -52,7 +52,10 @@ module.exports = argv => {
                   },
                 ],
               ],
-              plugins: [require.resolve('babel-plugin-syntax-trailing-function-commas')],
+              plugins: [
+                require.resolve('babel-plugin-syntax-trailing-function-commas'),
+                require.resolve('babel-plugin-transform-object-rest-spread'),
+              ],
             },
           },
         },
