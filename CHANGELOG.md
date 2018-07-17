@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.1"></a>
+## [1.13.1](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.13.0...v1.13.1) (2018-07-17)
+
+
+### Bug Fixes
+
+* added cwd for eslint, so ignores can be properly mapped ([5dd2b06](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/5dd2b06))
+
+
+
 <a name="1.13.0"></a>
 # [1.13.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.12.0...v1.13.0) (2018-07-17)
 
