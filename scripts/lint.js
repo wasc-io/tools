@@ -8,6 +8,7 @@ module.exports = argv => {
     baseConfig,
     useEslintrc: false,
     ignore: false,
+    ignorePath: paths.selfIgnore,
     fix: argv.write,
   });
 

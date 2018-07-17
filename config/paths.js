@@ -12,6 +12,8 @@ module.exports = {
   projectRoot,
   projectSrc: resolveProjectDirectory('src'),
 
+  selfIgnore: resolveSelfDirectory('config/.ignore'),
+
   projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
   projectMocha: resolveProjectDirectory('node_modules/.bin/mocha'),
   projectNyc: resolveProjectDirectory('node_modules/.bin/nyc'),
@@ -23,7 +25,6 @@ module.exports = {
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
   selfNodeModules: resolveSelfDirectory('node_modules'),
   selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
-  selfPrettierIgnore: resolveSelfDirectory('config/.prettierignore'),
 
   selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
   selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),
