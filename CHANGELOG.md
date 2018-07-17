@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.0"></a>
+# [1.13.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.12.0...v1.13.0) (2018-07-17)
+
+
+### Features
+
+* updated ignore rules for prettier and eslint ([23f7760](https://git.nicolaischmid.de/wasc-npm/wasc-tools/commits/23f7760))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://git.nicolaischmid.de/wasc-npm/wasc-tools/compare/v1.11.0...v1.12.0) (2018-07-10)
 
