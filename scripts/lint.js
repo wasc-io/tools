@@ -10,6 +10,7 @@ module.exports = argv => {
     ignore: false,
     ignorePath: paths.selfIgnore,
     fix: argv.write,
+    cwd: paths.projectRoot,
   });
 
   const report = engine.executeOnFiles([paths.projectRoot]);
