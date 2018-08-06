@@ -1,6 +1,6 @@
 # \wasc-tools\
-# [![wasc-tools](docs/carbon.png)](https://git.nicolaischmid.de/wasc-npm/wasc-tools)
-A simple CLI for testing, linting, formatting Javascript projects, with the company required rules
+# [![wasc-tools](docs/carbon.png)](https://github.com/wasc-io/tools)
+Opinionated toolkit for every JavaScript project in need 🚨
 
 ## Usage
 This tools provides most of the required tools for a big JS project. It transpiles with, it lints, it pretties, it tests and it even counts lines of code. All behind an easy cli.
