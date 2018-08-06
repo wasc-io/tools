@@ -29,3 +29,5 @@ and a `prettier.config.js`:
 ```javascript
 module.exports = require('@wasc/tools/prettier');
 ```
+
+## [Changelog](CHANGELOG.md)
