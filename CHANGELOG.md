@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/wasc-io/tools/compare/v1.13.4...v1.14.0) (2018-08-12)
+
+
+### Features
+
+* added configuration to nodeExternal that will bundle all non JS/JSON files ([b552950](https://github.com/wasc-io/tools/commit/b552950))
+
+
+
 <a name="1.13.4"></a>
 ## [1.13.4](https://github.com/wasc-io/tools/compare/v1.13.3...v1.13.4) (2018-08-06)
 
