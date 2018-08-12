@@ -28,7 +28,12 @@ module.exports = argv => {
     entry: paths.projectIndexJs,
     target: 'node',
     node: false,
-    externals: [nodeExternals()],
+    externals: [
+      nodeExternals({
+        // load non-javascript files with extensions, presumably via loaders
+        whitelist: [/\.(?!(?:jsx?|json)$).{1,5}$/i],
+      }),
+    ],
     devtool: 'sourcemap',
     mode: 'production',
     resolve: {
