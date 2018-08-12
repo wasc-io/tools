@@ -65,8 +65,8 @@ module.exports = argv => {
           },
         },
         {
-          exclude: /node_modules/,
           test: /\.graphql$/,
+          exclude: /node_modules/,
           use: [{ loader: 'graphql-import-loader' }],
         },
       ],
