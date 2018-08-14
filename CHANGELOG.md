@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.15.0"></a>
+# [1.15.0](https://github.com/wasc-io/tools/compare/v1.14.0...v1.15.0) (2018-08-14)
+
+
+### Features
+
+* **eslint:** updated to ecma 2018 ([ee44759](https://github.com/wasc-io/tools/commit/ee44759))
+
+
+
 <a name="1.14.0"></a>
 # [1.14.0](https://github.com/wasc-io/tools/compare/v1.13.4...v1.14.0) (2018-08-12)
 
