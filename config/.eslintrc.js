@@ -2,7 +2,7 @@ module.exports = {
   extends: ['airbnb', 'prettier'],
   plugins: ['import', 'jsx-a11y', 'react', 'prettier'],
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
   },
   // Turn off rules that are too strict
   rules: {
