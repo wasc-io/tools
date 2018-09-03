@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.2"></a>
+## [1.16.2](https://github.com/wasc-io/tools/compare/v1.16.1...v1.16.2) (2018-09-03)
+
+
+### Bug Fixes
+
+* added a field resolve path to resolve the main export before the modules ([5db0a21](https://github.com/wasc-io/tools/commit/5db0a21))
+
+
+
 <a name="1.16.1"></a>
 ## [1.16.1](https://github.com/wasc-io/tools/compare/v1.16.0...v1.16.1) (2018-08-27)
 
