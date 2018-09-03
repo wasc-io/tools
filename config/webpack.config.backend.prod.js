@@ -37,6 +37,8 @@ module.exports = argv => {
     devtool: 'sourcemap',
     mode: 'production',
     resolve: {
+      // TODO Change this back, when the error with graphql-js is resolved https://github.com/graphql/graphql-js/issues/1272#issuecomment-377384574
+      mainFields: ['main', 'module'],
       modules: ['node_modules', paths.selfNodeModules],
     },
     module: {
