@@ -37,12 +37,16 @@ module.exports = argv => {
     devtool: 'sourcemap',
     mode: 'production',
     resolve: {
-      // TODO Change this back, when the error with graphql-js is resolved https://github.com/graphql/graphql-js/issues/1272#issuecomment-377384574
-      mainFields: ['main', 'module'],
       modules: ['node_modules', paths.selfNodeModules],
     },
     module: {
       rules: [
+        // TODO Change this back, when the error with graphql-js is resolved https://github.com/apollographql/react-apollo/issues/1737 https://github.com/graphql/graphql-js/issues/1272#issuecomment-377384574
+        {
+          test: /\.mjs$/,
+          include: /node_modules/,
+          type: 'javascript/auto',
+        },
         {
           test: /\.js$/,
           exclude: /(node_modules|bower_components)/,
