@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.3"></a>
+## [1.16.3](https://github.com/wasc-io/tools/compare/v1.16.2...v1.16.3) (2018-09-04)
+
+
+### Bug Fixes
+
+* added test for mjs files, to be resolved as regular javascript ([f2426f6](https://github.com/wasc-io/tools/commit/f2426f6))
+
+
+
 <a name="1.16.2"></a>
 ## [1.16.2](https://github.com/wasc-io/tools/compare/v1.16.1...v1.16.2) (2018-09-03)
 
