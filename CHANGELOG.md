@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.17.1"></a>
+## [1.17.1](https://github.com/wasc-io/tools/compare/v1.17.0...v1.17.1) (2018-09-20)
+
+
+### Bug Fixes
+
+* **test:** changed jest path to project jest ([6360651](https://github.com/wasc-io/tools/commit/6360651))
+
+
+
 <a name="1.17.0"></a>
 # [1.17.0](https://github.com/wasc-io/tools/compare/v1.16.3...v1.17.0) (2018-09-20)
 
