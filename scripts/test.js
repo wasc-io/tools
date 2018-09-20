@@ -4,7 +4,7 @@ const paths = require('../config/paths');
 module.exports = () => {
   const jestArgs = [`--config=${paths.selfJestConfig}`];
 
-  execa(paths.selfJest, jestArgs, {
+  execa(paths.projectJest, jestArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',

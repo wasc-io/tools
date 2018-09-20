@@ -15,6 +15,7 @@ module.exports = {
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
   projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
+  projectJest: resolveProjectDirectory('node_modules/.bin/jest'),
 
   selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
   selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
