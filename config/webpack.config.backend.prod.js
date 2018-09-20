@@ -4,6 +4,8 @@ const nodeExternals = require('webpack-node-externals');
 
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const NodemonPlugin = require('nodemon-webpack-plugin');
+const babelConfig = require('./.babelrc');
+
 const paths = require('./paths');
 
 module.exports = argv => {
@@ -52,22 +54,7 @@ module.exports = argv => {
           exclude: /(node_modules|bower_components)/,
           use: {
             loader: 'babel-loader',
-            options: {
-              presets: [
-                [
-                  require.resolve('babel-preset-env'),
-                  {
-                    targets: {
-                      node: '8.2',
-                    },
-                  },
-                ],
-              ],
-              plugins: [
-                require.resolve('babel-plugin-syntax-trailing-function-commas'),
-                require.resolve('babel-plugin-transform-object-rest-spread'),
-              ],
-            },
+            options: babelConfig,
           },
         },
         {
