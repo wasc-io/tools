@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.18.0"></a>
+# [1.18.0](https://github.com/wasc-io/tools/compare/v1.17.2...v1.18.0) (2018-09-20)
+
+
+### Features
+
+* **babel:** switched to use node 10 ([782acd1](https://github.com/wasc-io/tools/commit/782acd1))
+* **test:** used modulized babel configuration for use in webpack and jest config ([933e53a](https://github.com/wasc-io/tools/commit/933e53a))
+
+
+
 <a name="1.17.2"></a>
 ## [1.17.2](https://github.com/wasc-io/tools/compare/v1.17.1...v1.17.2) (2018-09-20)
 
