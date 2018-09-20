@@ -1,16 +1,8 @@
-const execa = require('execa');
+const jest = require('jest');
 const paths = require('../config/paths');
 
 module.exports = () => {
   const jestArgs = [`--config=${paths.selfJestConfig}`];
 
-  execa(paths.projectJest, jestArgs, {
-    env: process.env,
-    cwd: paths.projectRoot,
-    stdio: 'inherit',
-  }).catch(error => {
-    console.error('Command failed with the following error:\n');
-    console.error(error);
-    process.exit(1);
-  });
+  jest.run(jestArgs);
 };
