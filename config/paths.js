@@ -15,16 +15,14 @@ module.exports = {
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
   projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
-  projectMocha: resolveProjectDirectory('node_modules/.bin/mocha'),
-  projectNyc: resolveProjectDirectory('node_modules/.bin/nyc'),
 
   selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
-  selfMocha: resolveSelfDirectory('node_modules/.bin/mocha'),
-  selfNyc: resolveSelfDirectory('node_modules/.bin/nyc'),
+  selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
   selfNodeModules: resolveSelfDirectory('node_modules'),
   selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
+  selfJestConfig: resolveSelfDirectory('config/jest.config.js'),
 
   selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
   selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),

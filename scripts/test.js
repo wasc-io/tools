@@ -2,16 +2,9 @@ const execa = require('execa');
 const paths = require('../config/paths');
 
 module.exports = () => {
-  // TODO Implement all options to yargs cli
-  const mochaArgs = [
-    paths.selfMocha,
-    '--timeout',
-    225000,
-    '--check-leaks',
-    '--exit',
-    './test/**/*.{js,ts}',
-  ];
-  execa(paths.selfNyc, mochaArgs, {
+  const jestArgs = [`--config=${paths.selfJestConfig}`];
+
+  execa(paths.selfJest, jestArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
