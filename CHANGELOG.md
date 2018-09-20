@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.19.0"></a>
+# [1.19.0](https://github.com/wasc-io/tools/compare/v1.18.0...v1.19.0) (2018-09-20)
+
+
+### Features
+
+* **test:** changed to json passed arguments to jest run command ([4e79abc](https://github.com/wasc-io/tools/commit/4e79abc))
+
+
+
 <a name="1.18.0"></a>
 # [1.18.0](https://github.com/wasc-io/tools/compare/v1.17.2...v1.18.0) (2018-09-20)
 
