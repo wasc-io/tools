@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.21.0"></a>
+# [1.21.0](https://github.com/wasc-io/tools/compare/v1.20.0...v1.21.0) (2018-09-21)
+
+
+### Features
+
+* added project cache path and set jest to that path ([9c312ac](https://github.com/wasc-io/tools/commit/9c312ac))
+
+
+
 <a name="1.20.0"></a>
 # [1.20.0](https://github.com/wasc-io/tools/compare/v1.19.0...v1.20.0) (2018-09-21)
 
