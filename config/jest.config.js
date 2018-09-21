@@ -2,7 +2,7 @@ const paths = require('./paths');
 
 module.exports = {
   rootDir: paths.projectRoot,
-  cacheDirectory: '~/.cache',
+  cacheDirectory: paths.projectCache,
   transform: {
     '^.+\\.jsx?$': require.resolve('./jest/JSTransformer.js'),
   },

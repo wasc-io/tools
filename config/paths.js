@@ -11,6 +11,7 @@ module.exports = {
   projectIndexJs: resolveProjectDirectory('src/index.js'),
   projectRoot,
   projectSrc: resolveProjectDirectory('src'),
+  projectCache: resolveProjectDirectory('.cache'),
 
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
