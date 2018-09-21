@@ -1,8 +1,10 @@
 const jest = require('jest');
 const jestConfig = require('../config/jest.config');
 
-module.exports = () => {
+module.exports = argv => {
   const jestArgs = ['--config', JSON.stringify(jestConfig)];
-  // console.log('asfd');
+  if (argv.coverage) {
+    jestArgs.push('--coverage');
+  }
   jest.run(jestArgs);
 };

@@ -67,7 +67,17 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
     'todo',
     'parse all todos from the sourcefiles and display them neatly in a markdown file',
   )
-  .command('test', 'this will run the default test suite [not supported yet]')
+  .command(
+    'test',
+    'this will run tests using jest found in __tests__ directory on JS files',
+    yargs => {
+      yargs.positional('coverage', {
+        describe: 'Collect coverage from jest',
+        type: 'boolean',
+        default: false,
+      });
+    },
+  )
   .help('h')
   .alias('h', 'help')
   .alias('v', 'version')
