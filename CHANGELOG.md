@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.22.1"></a>
+## [1.22.1](https://github.com/wasc-io/tools/compare/v1.22.0...v1.22.1) (2018-10-14)
+
+
+
 <a name="1.22.0"></a>
 # [1.22.0](https://github.com/wasc-io/tools/compare/v1.21.0...v1.22.0) (2018-09-21)
 
