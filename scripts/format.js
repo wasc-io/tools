@@ -8,7 +8,7 @@ module.exports = argv => {
     paths.selfPrettierConfig,
     '--ignore-path',
     paths.selfIgnore,
-    `./**/*.{js,json,graphql,md}`,
+    `./**/*.{js,json,graphql,md,html}`,
   ];
   execa(paths.projectPrettier, prettierArgs, {
     env: process.env,
