@@ -4,6 +4,7 @@ const nodeExternals = require('webpack-node-externals');
 
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const NodemonPlugin = require('nodemon-webpack-plugin');
+const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
 const babelConfig = require('./.babelrc');
 
 const paths = require('./paths');
@@ -62,6 +63,17 @@ module.exports = argv => {
           exclude: /node_modules/,
           use: [{ loader: 'graphql-import-loader' }],
         },
+        {
+          test: /\.tsx?$/,
+          use: {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+              sourceMap: true,
+              declaration: true,
+            },
+          },
+        },
       ],
     },
     plugins: [
@@ -80,6 +92,7 @@ module.exports = argv => {
       new NodemonPlugin({
         nodeArgs,
       }),
+      new ForkTsCheckerPlugin(),
     ],
   };
 };
