@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.24.0"></a>
+# [1.24.0](https://github.com/wasc-io/tools/compare/v1.23.1...v1.24.0) (2019-06-26)
+
+
+### Features
+
+* add ts-loader and typecheck plugin ([45c1aea](https://github.com/wasc-io/tools/commit/45c1aea))
+* **webpack:** switch to awesome typescript loader ([6c1e91c](https://github.com/wasc-io/tools/commit/6c1e91c))
+
+
+
 <a name="1.23.1"></a>
 ## [1.23.1](https://github.com/wasc-io/tools/compare/v1.23.0...v1.23.1) (2019-06-21)
 
