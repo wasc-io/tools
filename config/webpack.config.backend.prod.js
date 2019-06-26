@@ -4,6 +4,7 @@ const nodeExternals = require('webpack-node-externals');
 
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const NodemonPlugin = require('nodemon-webpack-plugin');
+const { CheckerPlugin } = require('awesome-typescript-loader');
 const babelConfig = require('./.babelrc');
 
 const paths = require('./paths');
@@ -43,6 +44,15 @@ module.exports = argv => {
     },
     module: {
       rules: [
+        {
+          test: /\.tsx?$/,
+          use: {
+            loader: 'awesome-typescript-loader',
+            options: {
+              useBabel: true,
+            },
+          },
+        },
         // TODO Change this back, when the error with graphql-js is resolved https://github.com/apollographql/react-apollo/issues/1737 https://github.com/graphql/graphql-js/issues/1272#issuecomment-377384574
         {
           test: /\.mjs$/,
@@ -80,6 +90,7 @@ module.exports = argv => {
       new NodemonPlugin({
         nodeArgs,
       }),
+      new CheckerPlugin(),
     ],
   };
 };
