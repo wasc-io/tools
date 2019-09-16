@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.25.0"></a>
+# [1.25.0](https://github.com/wasc-io/tools/compare/v1.24.1...v1.25.0) (2019-09-16)
+
+
+### Features
+
+* **eslint:** allow i++ in loops ([3a62547](https://github.com/wasc-io/tools/commit/3a62547))
+
+
+
 <a name="1.24.1"></a>
 ## [1.24.1](https://github.com/wasc-io/tools/compare/v1.24.0...v1.24.1) (2019-08-29)
 
