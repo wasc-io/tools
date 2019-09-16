@@ -11,5 +11,7 @@ module.exports = {
     'global-require': 'off',
     'no-console': 'off',
     'import/no-dynamic-require': 'off',
+    // https://eslint.org/docs/rules/no-plusplus#allowforloopafterthoughts
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
   },
 };
