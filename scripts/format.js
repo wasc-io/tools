@@ -10,7 +10,7 @@ module.exports = argv => {
     paths.selfIgnore,
     `./**/*.{js,json,graphql,md,html}`,
   ];
-  execa(paths.projectPrettier, prettierArgs, {
+  execa(paths.selfPrettier, prettierArgs, {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
