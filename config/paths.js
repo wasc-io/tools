@@ -13,19 +13,17 @@ module.exports = {
   projectSrc: resolveProjectDirectory('src'),
   projectCache: resolveProjectDirectory('.cache'),
 
-  selfIgnore: resolveSelfDirectory('config/.ignore'),
+  projectPackageJson: resolveProjectDirectory('package.json'),
+  projectPnp: resolveProjectDirectory('.pnp.js'),
 
-  projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
-  projectJest: resolveProjectDirectory('node_modules/.bin/jest'),
+  selfIgnore: resolveSelfDirectory('config/.ignore'),
 
   selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
   selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
+  selfBabelNode: resolveSelfDirectory('node_modules/.bin/babel-node'),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
-  selfNodeModules: resolveSelfDirectory('node_modules'),
   selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
   selfJestConfig: resolveSelfDirectory('config/jest.config.js'),
-
-  selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
-  selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),
+  selfBabelConfig: resolveSelfDirectory('config/.babelrc.js'),
 };
