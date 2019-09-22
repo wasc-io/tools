@@ -5,8 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const paths = require('../config/paths');
 const babelConfiguration = require('../config/.babelrc');
 
-module.exports = async argv => {
-  const mode = argv._[1];
+module.exports = async () => {
   if (!existsSync(paths.projectIndexJs)) {
     console.error('`src/index.js` file does not exist.');
 

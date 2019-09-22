@@ -1,16 +1,6 @@
 const { existsSync } = require('fs');
-const webpack = require('webpack');
 const nodemon = require('nodemon');
 const paths = require('../config/paths');
-const package = require(paths.projectPackageJson);
-
-/**
- * Handler to stop webpack watching, when closing the script
- * @param {Object} watching The watching object from webpack
- */
-function close(watching) {
-  watching.close();
-}
 
 module.exports = async argv => {
   if (!existsSync(paths.projectIndexJs)) {
@@ -38,7 +28,7 @@ module.exports = async argv => {
     },
   });
 
-  nodemon.on('quit', function() {
+  nodemon.on('quit', () => {
     process.exit();
   });
 };
