@@ -1,6 +1,6 @@
 {
   "name": "@wasc/tools",
-  "version": "1.25.1",
+  "version": "2.0.0-beta.0",
   "author": "wasc GmbH",
   "engines": {
     "node": ">=6.0.0"

@@ -1,6 +1,17 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.0.0-beta.0](https://github.com/wasc-io/tools/compare/v1.25.1...v2.0.0-beta.0) (2019-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* deprecation of build and watch subcommands
+
+### Features
+
+* simpler setup, no webpack, deprecation of subcommands, switch to yarn ([260f114](https://github.com/wasc-io/tools/commit/260f114))
 
 <a name="1.25.1"></a>
 ## [1.25.1](https://github.com/wasc-io/tools/compare/v1.25.0...v1.25.1) (2019-09-17)
