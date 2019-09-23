@@ -47,11 +47,11 @@
     "graphql": "^14.5.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-prettier": "^2.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "jest": "^24.8.0",
     "leasot": "^4.13.0",
     "nodemon": "^1.19.2",
-    "prettier": "^1.10.2",
     "sloc": "^0.2.0",
     "then-fs": "^2.0.0",
     "yargs": "^11.0.0"
