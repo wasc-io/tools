@@ -1,9 +1,6 @@
 const { existsSync } = require('fs');
-const gulp = require('gulp');
-const babel = require('gulp-babel');
-const sourcemaps = require('gulp-sourcemaps');
 const paths = require('../config/paths');
-const babelConfiguration = require('../config/.babelrc');
+const build = require('../lib/build');
 
 module.exports = async () => {
   if (!existsSync(paths.projectIndexJs)) {
@@ -12,11 +9,5 @@ module.exports = async () => {
     process.exit(1);
   }
 
-  // yarn run babel src --out-dir build --source-maps
-  gulp
-    .src(`${paths.projectSrc}/**`)
-    .pipe(sourcemaps.init())
-    .pipe(babel(babelConfiguration))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.projectBuild));
+  build();
 };

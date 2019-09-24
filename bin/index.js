@@ -19,18 +19,12 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   )
   .command('build', 'build the project using webpack-babel compiling')
   .command('watch', 'build and rebuild the project on source changes', yargs => {
-    yargs
-      .positional('env', {
-        describe: 'should dotenv be preloaded with the node process',
-        alias: 'e',
-        type: 'boolean',
-        default: true,
-      })
-      .positional('pnp', {
-        describe: 'should yarns plug-and-play configuration be preloaded',
-        type: 'boolean',
-        default: false,
-      });
+    yargs.positional('env', {
+      describe: 'should dotenv be preloaded with the node process',
+      alias: 'e',
+      type: 'boolean',
+      default: true,
+    });
   })
   .command(
     'lint',

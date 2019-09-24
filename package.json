@@ -42,7 +42,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.10.0",
-    "execa": "^0.9.0",
     "globby": "^7.1.1",
     "graphql": "^14.5.7",
     "gulp": "^4.0.2",
@@ -52,7 +51,6 @@
     "gulp-sourcemaps": "^2.6.5",
     "jest": "^24.8.0",
     "leasot": "^4.13.0",
-    "nodemon": "^1.19.2",
     "sloc": "^0.2.0",
     "then-fs": "^2.0.0",
     "yargs": "^11.0.0"
