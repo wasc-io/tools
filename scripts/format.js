@@ -1,22 +1,17 @@
-const execa = require('execa');
+const gulp = require('gulp');
+const prettier = require('gulp-prettier');
+
+const prettierConfig = require('../config/.prettierrc.json');
 const paths = require('../config/paths');
 
 module.exports = argv => {
-  const prettierArgs = [
-    argv['dry-run'] ? '--list-different' : '--write',
-    '--config',
-    paths.selfPrettierConfig,
-    '--ignore-path',
-    paths.selfIgnore,
-    `./**/*.{js,json,graphql,md,html}`,
-  ];
-  execa(paths.selfPrettier, prettierArgs, {
-    env: process.env,
-    cwd: paths.projectRoot,
-    stdio: 'inherit',
-  }).catch(error => {
-    console.error('Command failed with the following error:\n');
-    console.error(error);
-    process.exit(1);
-  });
+  const gulpStream = gulp.src(`${paths.projectSrc}/**/*.{js,json,graphql,md,html}`);
+  let prettierStream;
+  if (argv['dry-run']) {
+    prettierStream = gulpStream.pipe(prettier.check(prettierConfig));
+  } else {
+    prettierStream = gulpStream.pipe(prettier(prettierConfig));
+  }
+
+  prettierStream.pipe(gulp.dest(paths.projectSrc));
 };

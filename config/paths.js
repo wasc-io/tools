@@ -8,24 +8,21 @@ const resolveSelfDirectory = relativePath => path.resolve(selfRoot, relativePath
 
 module.exports = {
   projectBuild: resolveProjectDirectory('build'),
+  projectBuildIndexJs: resolveProjectDirectory('build/index.js'),
   projectIndexJs: resolveProjectDirectory('src/index.js'),
   projectRoot,
   projectSrc: resolveProjectDirectory('src'),
   projectCache: resolveProjectDirectory('.cache'),
 
+  projectPackageJson: resolveProjectDirectory('package.json'),
+  projectPnp: resolveProjectDirectory('.pnp.js'),
+
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
-  projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
-  projectJest: resolveProjectDirectory('node_modules/.bin/jest'),
-
-  selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
   selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
+  selfBabelNode: resolveSelfDirectory('node_modules/.bin/babel-node'),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
-  selfNodeModules: resolveSelfDirectory('node_modules'),
-  selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
   selfJestConfig: resolveSelfDirectory('config/jest.config.js'),
-
-  selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
-  selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),
+  selfBabelConfig: resolveSelfDirectory('config/.babelrc.js'),
 };
