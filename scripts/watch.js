@@ -3,7 +3,7 @@ const nodemon = require('gulp-nodemon');
 const paths = require('../config/paths');
 const build = require('../lib/build');
 
-module.exports = async argv => {
+module.exports = async () => {
   if (!existsSync(paths.projectIndexJs)) {
     console.error('`src/index.js` file does not exist.');
 
