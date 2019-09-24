@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-beta.5](https://github.com/wasc-io/tools/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2019-09-24)
+
+
+### Features
+
+* **watch:** implement watch script via gulp-nodemon and gulp babel ([e168a34](https://github.com/wasc-io/tools/commit/e168a34))
+
 ## [2.0.0-beta.4](https://github.com/wasc-io/tools/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2019-09-24)
 
 
