@@ -21,6 +21,7 @@ module.exports = {
 
   selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
   selfBabelNode: resolveSelfDirectory('node_modules/.bin/babel-node'),
+  selfBabel: resolveSelfDirectory('node_modules/.bin/babel'),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
   selfJestConfig: resolveSelfDirectory('config/jest.config.js'),

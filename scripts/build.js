@@ -1,6 +1,6 @@
 const { existsSync } = require('fs');
 const paths = require('../config/paths');
-const build = require('../lib/build');
+const execa = require('execa');
 
 module.exports = async () => {
   if (!existsSync(paths.projectIndexJs)) {
@@ -9,5 +9,12 @@ module.exports = async () => {
     process.exit(1);
   }
 
-  build();
+  execa(paths.selfBabel, [
+    paths.projectSrc,
+    '--out-dir',
+    paths.projectBuild,
+    '--source-maps',
+    '--config-file',
+    paths.selfBabelConfig,
+  ]).stdout.pipe(process.stdout);
 };
