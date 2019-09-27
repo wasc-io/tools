@@ -1,6 +1,6 @@
 const { existsSync } = require('fs');
-const paths = require('../config/paths');
 const execa = require('execa');
+const paths = require('../config/paths');
 
 module.exports = async () => {
   if (!existsSync(paths.projectIndexJs)) {
