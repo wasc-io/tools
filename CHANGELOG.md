@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.26.0"></a>
+# [1.26.0](https://github.com/wasc-io/tools/compare/v1.25.1...v1.26.0) (2019-12-16)
+
+
+### Features
+
+* add eslint json plugin ([44dedff](https://github.com/wasc-io/tools/commit/44dedff))
+
+
+
 <a name="1.25.1"></a>
 ## [1.25.1](https://github.com/wasc-io/tools/compare/v1.25.0...v1.25.1) (2019-09-17)
 
