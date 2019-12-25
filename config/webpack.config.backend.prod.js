@@ -39,6 +39,9 @@ module.exports = argv => {
     ],
     devtool: 'sourcemap',
     mode: 'production',
+    optimization: {
+      minimize: false,
+    },
     resolve: {
       modules: ['node_modules', paths.selfNodeModules],
     },
