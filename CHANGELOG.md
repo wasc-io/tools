@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.27.0"></a>
+# [1.27.0](https://github.com/wasc-io/tools/compare/v1.25.1...v1.27.0) (2019-12-25)
+
+
+### Features
+
+* **build:** disable webpack minification ([97f1855](https://github.com/wasc-io/tools/commit/97f1855))
+* add eslint json plugin ([44dedff](https://github.com/wasc-io/tools/commit/44dedff))
+
+
+
 <a name="1.26.0"></a>
 # [1.26.0](https://github.com/wasc-io/tools/compare/v1.25.1...v1.26.0) (2019-12-16)
 
