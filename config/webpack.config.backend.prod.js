@@ -35,6 +35,7 @@ module.exports = argv => {
       nodeExternals({
         // load non-javascript files with extensions, presumably via loaders
         whitelist: [/\.(?!(?:jsx?|json)$).{1,5}$/i],
+        modulesFromFile: true,
       }),
     ],
     devtool: 'sourcemap',
