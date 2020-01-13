@@ -1,6 +1,8 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.28.1](https://github.com/wasc-io/tools/compare/v1.28.0...v1.28.1) (2020-01-13)
 
 <a name="1.28.0"></a>
 # [1.28.0](https://github.com/wasc-io/tools/compare/v1.27.2...v1.28.0) (2020-01-13)
