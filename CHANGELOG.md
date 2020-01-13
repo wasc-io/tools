@@ -1,13 +1,16 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.27.2](https://github.com/wasc-io/tools/compare/v1.27.1...v1.27.2) (2020-01-03)
+<a name="1.28.0"></a>
+# [1.28.0](https://github.com/wasc-io/tools/compare/v1.27.2...v1.28.0) (2020-01-13)
 
 
-### Bug Fixes
+### Features
 
-* **build:backend:** use nodeexternals via package.json for yarn workspaces ([09dcd88](https://github.com/wasc-io/tools/commit/09dcd886d8e67af4b4a4794da3a1ae3a728e7052))
+* **build:backend:** don't treat [@internal](https://github.com/internal) -prefixed packages as externals ([e379f93](https://github.com/wasc-io/tools/commit/e379f93))
+
+
 
 <a name="1.27.1"></a>
 ## [1.27.1](https://github.com/wasc-io/tools/compare/v1.27.0...v1.27.1) (2019-12-25)
