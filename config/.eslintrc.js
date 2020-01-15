@@ -6,12 +6,4 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2020,
   },
-  // Turn off rules that are too strict
-  rules: {
-    'global-require': 'off',
-    'no-console': 'off',
-    'import/no-dynamic-require': 'off',
-    // https://eslint.org/docs/rules/no-plusplus#allowforloopafterthoughts
-    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-  },
 };

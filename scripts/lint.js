@@ -1,7 +1,7 @@
 const { CLIEngine } = require('eslint');
 const paths = require('../config/paths');
 
-const baseConfig = require(paths.selfESLintConfig);
+const baseConfig = require('../config/.eslintrc');
 
 module.exports = argv => {
   const engine = new CLIEngine({

@@ -84,4 +84,4 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .epilog(`© wasc GmbH. By Nicolai Schmid. All rights reserved.`).argv;
 
 // TODO Require Scripts individually inside yargs
-require(`../scripts/${argv._[0]}`)(argv);
+require(`../scripts/${argv._[0]}`)(argv); // eslint-disable-line import/no-dynamic-require

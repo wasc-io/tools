@@ -12,7 +12,7 @@ module.exports = async argv => {
   }
 
   if (mode === 'backend') {
-    const webpackConfigBackendProd = require(paths.selfWebpackConfigBackendProd)(argv);
+    const webpackConfigBackendProd = require('../config/webpack.config.backend.prod')(argv); // eslint-disable-line global-require
     const compiler = webpack(webpackConfigBackendProd);
 
     compiler.run((error, stats) => {
