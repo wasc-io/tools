@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-beta.1](https://github.com/wasc-io/tools/compare/v3.0.0-beta.0...v3.0.0-beta.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* add missing graphql dependency ([97a56f7](https://github.com/wasc-io/tools/commit/97a56f72907e60fbd9f7f5b67aae01590ef58ddb))
+* added missing react-hooks eslint plugin ([5ba397d](https://github.com/wasc-io/tools/commit/5ba397d42344543422377d94d8e24cba50ed918f))
+
 ## [3.0.0-beta.0](https://github.com/wasc-io/tools/compare/v1.29.0-beta.1...v3.0.0-beta.0) (2020-01-15)
 
 
