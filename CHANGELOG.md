@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-beta.3](https://github.com/wasc-io/tools/compare/v3.0.0-beta.2...v3.0.0-beta.3) (2020-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **webpack:** remove cli for choosing between frontend or backend
+
+### Features
+
+* **webpack:** drop frontend support ([158f17f](https://github.com/wasc-io/tools/commit/158f17fc48c3b162c3f4a8611d78e30f164ebadb))
+
 ## [3.0.0-beta.2](https://github.com/wasc-io/tools/compare/v3.0.0-beta.1...v3.0.0-beta.2) (2020-01-15)
 
 ## [3.0.0-beta.1](https://github.com/wasc-io/tools/compare/v3.0.0-beta.0...v3.0.0-beta.1) (2020-01-15)
