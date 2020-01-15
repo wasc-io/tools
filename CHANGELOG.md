@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-beta.4](https://github.com/wasc-io/tools/compare/v3.0.0-beta.3...v3.0.0-beta.4) (2020-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* require node v10
+
+### Features
+
+* **prettier:** change configuration to default for printWidth, jsxBracketSameLine ([b02868f](https://github.com/wasc-io/tools/commit/b02868f20e5c19a5ce6e1142709a2b2cc28ea090))
+* require node v10 ([4b82372](https://github.com/wasc-io/tools/commit/4b82372a83cf4322858d3e831ffd2fd7ba72a298))
+
 ## [3.0.0-beta.3](https://github.com/wasc-io/tools/compare/v3.0.0-beta.2...v3.0.0-beta.3) (2020-01-15)
 
 
