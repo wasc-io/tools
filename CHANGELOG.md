@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/wasc-io/tools/compare/v3.0.0-beta.5...v3.0.0) (2020-01-15)
+
 ## [3.0.0-beta.5](https://github.com/wasc-io/tools/compare/v3.0.0-beta.4...v3.0.0-beta.5) (2020-01-15)
 
 ## [3.0.0-beta.4](https://github.com/wasc-io/tools/compare/v3.0.0-beta.3...v3.0.0-beta.4) (2020-01-15)
