@@ -1,55 +1,47 @@
 const { existsSync } = require('fs');
 const webpack = require('webpack');
 const paths = require('../config/paths');
+const configBuilder = require('../config/webpack');
 
 module.exports = async argv => {
-  const mode = argv._[1];
-
   if (!existsSync(paths.projectIndexJs)) {
     console.error('`src/index.js` file does not exist.');
 
     process.exit(1);
   }
 
-  if (mode === 'backend') {
-    const webpackConfigBackendProd = require('../config/webpack.config.backend.prod')(argv); // eslint-disable-line global-require
-    const compiler = webpack(webpackConfigBackendProd);
+  const config = configBuilder(argv);
+  const compiler = webpack(config);
 
-    compiler.run((error, stats) => {
-      // Handle webpack configuration errors
-      if (error) {
-        console.error(error.stack || error);
-        if (error.details) {
-          console.error(error.details);
-        }
-
-        process.exit(1);
+  compiler.run((error, stats) => {
+    // Handle webpack configuration errors
+    if (error) {
+      console.error(error.stack || error);
+      if (error.details) {
+        console.error(error.details);
       }
 
-      const info = stats.toJson();
+      process.exit(1);
+    }
 
-      // Handle compilation errors
-      if (stats.hasErrors()) {
-        console.error(info.errors);
+    const info = stats.toJson();
 
-        process.exit(1);
-      }
+    // Handle compilation errors
+    if (stats.hasErrors()) {
+      console.error(info.errors);
 
-      // Print any warnings before anything else
-      if (stats.hasWarnings()) {
-        console.warn(info.warnings);
-      }
+      process.exit(1);
+    }
 
-      console.log(
-        stats.toString({
-          colors: true,
-        }),
-      );
-    });
-  } else if (mode === 'frontend') {
-    // const webpackConfigFrontendProd = require(paths.selfwebpackConfigFrontendProd);
-    // const compiler = webpack(webpackConfigFrontendProd);
-    console.error('Frontend not supported yet. Stay tuned!');
-    process.exit(1);
-  }
+    // Print any warnings before anything else
+    if (stats.hasWarnings()) {
+      console.warn(info.warnings);
+    }
+
+    console.log(
+      stats.toString({
+        colors: true,
+      }),
+    );
+  });
 };

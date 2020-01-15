@@ -17,31 +17,21 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .usage(
     '$0 <command> [options], a tool for creating front- and backend javascript projects alike, with builtin prettier, eslint and babel-compiling',
   )
-  .command('build', 'build the project using webpack-babel compiling', yargs => {
-    yargs
-      .command('frontend', 'for frontend projects [not supported yet]')
-      .command('backend', 'for nodeJS based backend projects')
-      .demand(1, 'please select which project type you have');
-  })
+  .command('build', 'build the project using webpack-babel compiling')
   .command('watch', 'build and rebuild the project on source changes', yargs => {
     yargs
-      .command('frontend', 'for frontend projects [not supported yet]')
-      .command('backend', 'for nodeJS based backend projects', yargs2 => {
-        yargs2
-          .positional('debug', {
-            descibe: 'enable the node debugging protocol in the nodemon process',
-            alias: 'd',
-            type: 'boolean',
-            default: false,
-          })
-          .positional('env', {
-            describe: 'should dotenv be preloaded with the node process',
-            alias: 'e',
-            type: 'boolean',
-            default: true,
-          });
+      .positional('debug', {
+        descibe: 'enable the node debugging protocol in the nodemon process',
+        alias: 'd',
+        type: 'boolean',
+        default: false,
       })
-      .demand(1, 'please select which project type you have');
+      .positional('env', {
+        describe: 'should dotenv be preloaded with the node process',
+        alias: 'e',
+        type: 'boolean',
+        default: true,
+      });
   })
   .command(
     'lint',
