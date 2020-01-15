@@ -6,7 +6,6 @@ const baseConfig = require('../config/.eslintrc');
 module.exports = argv => {
   const engine = new CLIEngine({
     baseConfig,
-    useEslintrc: false,
     ignorePath: paths.selfIgnore,
     fix: argv.write,
     cwd: paths.projectRoot,
