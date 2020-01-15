@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-beta.0](https://github.com/wasc-io/tools/compare/v1.29.0-beta.1...v3.0.0-beta.0) (2020-01-15)
+
+
+### Features
+
+* update dotenv and execa and require at least node v10 ([add6575](https://github.com/wasc-io/tools/commit/add657548acea1606cbc39f51943134d6fcec458))
+
 ## [1.29.0-beta.1](https://github.com/wasc-io/tools/compare/v1.29.0-beta.0...v1.29.0-beta.1) (2020-01-15)
 
 
