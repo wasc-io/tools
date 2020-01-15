@@ -1,10 +1,10 @@
 module.exports = {
   presets: [
     [
-      require.resolve('babel-preset-env'),
+      require.resolve('@babel/preset-env'),
       {
         targets: {
-          node: '10',
+          node: '13',
         },
       },
     ],
