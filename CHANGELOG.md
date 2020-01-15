@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/wasc-io/tools/compare/v3.0.0...v3.0.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **lint:** allow ignoring files and configuration ([597a98f](https://github.com/wasc-io/tools/commit/597a98f2f8f5f947bc0a21c83805cba80d0f722e))
+* **lint:** allow local eslint configurations ([329b4d2](https://github.com/wasc-io/tools/commit/329b4d29d7cd0bb2674a2591d88d0aa4dacec92b))
+
 ## [3.0.0](https://github.com/wasc-io/tools/compare/v3.0.0-beta.5...v3.0.0) (2020-01-15)
 
 ## [3.0.0-beta.5](https://github.com/wasc-io/tools/compare/v3.0.0-beta.4...v3.0.0-beta.5) (2020-01-15)
