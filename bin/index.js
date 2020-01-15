@@ -54,10 +54,6 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   })
   .command('count', 'count the lines of code in all supported source-files')
   .command(
-    'todo',
-    'parse all todos from the sourcefiles and display them neatly in a markdown file',
-  )
-  .command(
     'test',
     'this will run tests using jest found in __tests__ directory on JS files',
     yargs => {
