@@ -46,6 +46,7 @@
     "eslint-plugin-react-hooks": "^1.0.0",
     "execa": "^4.0.0",
     "globby": "^7.1.1",
+    "graphql": "^0.13.0",
     "graphql-import-loader": "^0.2.1",
     "jest": "^24.8.0",
     "leasot": "^4.13.0",
