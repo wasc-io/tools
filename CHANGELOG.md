@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.29.0-beta.0](https://github.com/wasc-io/tools/compare/v1.28.1...v1.29.0-beta.0) (2020-01-15)
+
+
+### Features
+
+* upgrade babel to v7 ([3f346bb](https://github.com/wasc-io/tools/commit/3f346bb5d481f7f3a7a0277b4ada969f987d75ff))
+* **eslint:** upgrade to eslint v6 ([d92eb63](https://github.com/wasc-io/tools/commit/d92eb6319ec29de2b888aa51f722821b0081cd8a))
+* eslint remove custom arbitrary eslint rules ([81c4bb2](https://github.com/wasc-io/tools/commit/81c4bb245181b0f272a7860ff13209db50ced107))
+* **eslint:** update to ecmaVersion 2020 ([1e09061](https://github.com/wasc-io/tools/commit/1e0906119acbe2e9a6c9a37422574e747bef87f5))
+
 ### [1.28.1](https://github.com/wasc-io/tools/compare/v1.28.0...v1.28.1) (2020-01-13)
 
 <a name="1.28.0"></a>
