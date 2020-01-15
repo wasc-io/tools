@@ -6,9 +6,9 @@ const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split('.');
 const major = semver[0];
 
-if (major < 6) {
+if (major < 10) {
   console.error('You are running Node ' + currentNodeVersion + '.'); // eslint-disable-line prefer-template
-  console.error('Please update your version of Node to 6 or higher.');
+  console.error('Please update your version of Node to 10 or higher.');
 
   process.exit(1);
 }
