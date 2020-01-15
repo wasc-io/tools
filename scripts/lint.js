@@ -7,7 +7,6 @@ module.exports = argv => {
   const engine = new CLIEngine({
     baseConfig,
     useEslintrc: false,
-    ignore: false,
     ignorePath: paths.selfIgnore,
     fix: argv.write,
     cwd: paths.projectRoot,
