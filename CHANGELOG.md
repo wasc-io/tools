@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.29.0-beta.1](https://github.com/wasc-io/tools/compare/v1.29.0-beta.0...v1.29.0-beta.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* change to @babel/plugin-proposal-trailing-function-commas for babel 7 ([b0e55e5](https://github.com/wasc-io/tools/commit/b0e55e566a586e92fbe9e9813a578389f0f44b23))
+
 ## [1.29.0-beta.0](https://github.com/wasc-io/tools/compare/v1.28.1...v1.29.0-beta.0) (2020-01-15)
 
 
