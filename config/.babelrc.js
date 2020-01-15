@@ -11,6 +11,6 @@ module.exports = {
   ],
   plugins: [
     require.resolve('babel-plugin-syntax-trailing-function-commas'),
-    require.resolve('babel-plugin-transform-object-rest-spread'),
+    require.resolve('@babel/plugin-proposal-object-rest-spread'),
   ],
 };
