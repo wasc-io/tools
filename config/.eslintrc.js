@@ -4,7 +4,7 @@ module.exports = {
   plugins: ['import', 'jsx-a11y', 'react', 'prettier', 'json'],
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
   },
   // Turn off rules that are too strict
   rules: {
