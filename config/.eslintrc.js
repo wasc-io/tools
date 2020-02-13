@@ -14,6 +14,7 @@ module.exports = {
     'json',
     'css-modules',
     'optimize-regex',
+    'no-secrets',
   ],
   parserOptions: {
     sourceType: 'module',

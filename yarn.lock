@@ -3191,6 +3191,11 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
+eslint-plugin-no-secrets@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-secrets/-/eslint-plugin-no-secrets-0.3.4.tgz#08cd3a6e59c47559a59db6b0bc75df4c726ea911"
+  integrity sha512-kfbI9FeTKso/fYv3fjUtF8B7gFytFaJEu4ElPpHzMiVJ8ZHE0Uslb3JPjDGSS66Hz4ZDTdlVA5TxPYaPRCkbYg==
+
 eslint-plugin-optimize-regex@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/eslint-plugin-optimize-regex/-/eslint-plugin-optimize-regex-1.1.7.tgz#9368fe1243efbe034f3cc24acfd5e4b7ddb8eb40"
