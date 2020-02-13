@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/wasc-io/tools/compare/v3.0.1...v3.1.0) (2020-02-13)
+
+
+### Features
+
+* **lint:** add css-class eslint ([470a3dd](https://github.com/wasc-io/tools/commit/470a3dd219b9f5004abba7999776f36e8b623793))
+* **lint:** add eslint-comments eslint ([7abc308](https://github.com/wasc-io/tools/commit/7abc308f42ce8caa929b8accd7ab20cb009e1fb3))
+* **lint:** add filenames eslint plugin; allow camelCase and pascal case ([64da298](https://github.com/wasc-io/tools/commit/64da2980257193bb3f661b0e223572b0b216917f))
+* **lint:** add no-secrets eslint plugin ([11e5265](https://github.com/wasc-io/tools/commit/11e5265863af3606aa9241e8c50206352b39abb7))
+* **lint:** add optimize-regex eslint ([3a4481b](https://github.com/wasc-io/tools/commit/3a4481b433ee32ccd13eb409a34dd1398e8d9fd0))
+
 ### [3.0.1](https://github.com/wasc-io/tools/compare/v3.0.0...v3.0.1) (2020-01-15)
 
 
