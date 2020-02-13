@@ -1,6 +1,11 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier', 'plugin:css-modules/recommended'],
+  extends: [
+    'airbnb',
+    'prettier',
+    'plugin:css-modules/recommended',
+    'plugin:eslint-comments/recommended',
+  ],
   plugins: [
     'import',
     'jsx-a11y',
