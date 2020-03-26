@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/wasc-io/tools/compare/v3.1.2...v4.0.0) (2020-03-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove eslint-filenames plugin
+
+### Features
+
+* remove filenames eslint plugin ([59bf0bf](https://github.com/wasc-io/tools/commit/59bf0bf09746b327a10cec3120625bfad16a6d81))
+
 ### [3.1.2](https://github.com/wasc-io/tools/compare/v3.1.1...v3.1.2) (2020-02-14)
 
 ### [3.1.1](https://github.com/wasc-io/tools/compare/v3.1.0...v3.1.1) (2020-02-13)
