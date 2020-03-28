@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0-beta.0](https://github.com/wasc-io/tools/compare/v4.0.2...v5.0.0-beta.0) (2020-03-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* jest, prettier
+
+### Features
+
+* upgrade dependencies ([b0e9dbe](https://github.com/wasc-io/tools/commit/b0e9dbe507289d077ade5c5f36bfc2f551e840cc))
+
 ### [4.0.2](https://github.com/wasc-io/tools/compare/v4.0.1...v4.0.2) (2020-03-26)
 
 ### [4.0.1](https://github.com/wasc-io/tools/compare/v4.0.0...v4.0.1) (2020-03-26)
