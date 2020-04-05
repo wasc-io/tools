@@ -3,7 +3,7 @@ const paths = require('../config/paths');
 
 const baseConfig = require('../config/.eslintrc');
 
-module.exports = argv => {
+module.exports = (argv) => {
   const engine = new CLIEngine({
     baseConfig,
     ignorePath: paths.selfIgnore,

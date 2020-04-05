@@ -11,7 +11,7 @@ function close(watching) {
   watching.close();
 }
 
-module.exports = async argv => {
+module.exports = async (argv) => {
   if (!existsSync(paths.projectIndexJs)) {
     console.error('`src/index.js` file does not exist.');
 

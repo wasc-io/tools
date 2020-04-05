@@ -3,8 +3,10 @@ const path = require('path');
 const projectRoot = process.cwd();
 const selfRoot = path.resolve(__dirname, '..');
 
-const resolveProjectDirectory = relativePath => path.resolve(projectRoot, relativePath);
-const resolveSelfDirectory = relativePath => path.resolve(selfRoot, relativePath);
+const resolveProjectDirectory = (relativePath) =>
+  path.resolve(projectRoot, relativePath);
+const resolveSelfDirectory = (relativePath) =>
+  path.resolve(selfRoot, relativePath);
 
 module.exports = {
   projectBuild: resolveProjectDirectory('build'),
@@ -26,6 +28,10 @@ module.exports = {
   selfPrettierConfig: resolveSelfDirectory('config/.prettierrc.json'),
   selfJestConfig: resolveSelfDirectory('config/jest.config.js'),
 
-  selfWebpackConfigBackendProd: resolveSelfDirectory('config/webpack.config.backend.prod.js'),
-  selfwebpackConfigFrontendProd: resolveSelfDirectory('config/webpack.config.frontend.prod.js'),
+  selfWebpackConfigBackendProd: resolveSelfDirectory(
+    'config/webpack.config.backend.prod.js',
+  ),
+  selfwebpackConfigFrontendProd: resolveSelfDirectory(
+    'config/webpack.config.frontend.prod.js',
+  ),
 };

@@ -18,25 +18,29 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
     '$0 <command> [options], a tool for creating front- and backend javascript projects alike, with builtin prettier, eslint and babel-compiling',
   )
   .command('build', 'build the project using webpack-babel compiling')
-  .command('watch', 'build and rebuild the project on source changes', yargs => {
-    yargs
-      .positional('debug', {
-        descibe: 'enable the node debugging protocol in the nodemon process',
-        alias: 'd',
-        type: 'boolean',
-        default: false,
-      })
-      .positional('env', {
-        describe: 'should dotenv be preloaded with the node process',
-        alias: 'e',
-        type: 'boolean',
-        default: true,
-      });
-  })
+  .command(
+    'watch',
+    'build and rebuild the project on source changes',
+    (yargs) => {
+      yargs
+        .positional('debug', {
+          descibe: 'enable the node debugging protocol in the nodemon process',
+          alias: 'd',
+          type: 'boolean',
+          default: false,
+        })
+        .positional('env', {
+          describe: 'should dotenv be preloaded with the node process',
+          alias: 'e',
+          type: 'boolean',
+          default: true,
+        });
+    },
+  )
   .command(
     'lint',
     'lint the project using eslint and the wasc-tools eslint configuration',
-    yargs => {
+    (yargs) => {
       yargs.positional('write', {
         describe: 'correct all problems in place in the files',
         alias: 'w',
@@ -45,18 +49,23 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
       });
     },
   )
-  .command('format', 'format the code using prettier with the wasc style guidelines', yargs => {
-    yargs.positional('dry-run', {
-      describe: "only print the files with differences and don't write the files in place",
-      type: 'boolean',
-      default: false,
-    });
-  })
+  .command(
+    'format',
+    'format the code using prettier with the wasc style guidelines',
+    (yargs) => {
+      yargs.positional('dry-run', {
+        describe:
+          "only print the files with differences and don't write the files in place",
+        type: 'boolean',
+        default: false,
+      });
+    },
+  )
   .command('count', 'count the lines of code in all supported source-files')
   .command(
     'test',
     'this will run tests using jest found in __tests__ directory on JS files',
-    yargs => {
+    (yargs) => {
       yargs.positional('coverage', {
         describe: 'Collect coverage from jest',
         type: 'boolean',

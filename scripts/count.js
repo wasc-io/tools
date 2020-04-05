@@ -4,7 +4,13 @@ const globby = require('globby');
 const { extname } = require('path');
 
 // Specify all initial files in a glob
-const glob = ['./**/*', '!./yarn.lock', '!./package.json', '!./bower.json', '!./helm/**'];
+const glob = [
+  './**/*',
+  '!./yarn.lock',
+  '!./package.json',
+  '!./bower.json',
+  '!./helm/**',
+];
 
 module.exports = async () => {
   const counters = {
@@ -24,11 +30,9 @@ module.exports = async () => {
   });
 
   await Promise.all(
-    files.map(async file => {
+    files.map(async (file) => {
       try {
-        let extension = extname(file)
-          .replace(/\./, '')
-          .toLowerCase();
+        let extension = extname(file).replace(/\./, '').toLowerCase();
 
         switch (extension) {
           case '':
@@ -58,7 +62,7 @@ module.exports = async () => {
           }
 
           // Add stats to total count
-          Object.keys(counters).forEach(key => {
+          Object.keys(counters).forEach((key) => {
             counters[key] += result[key];
           });
         }

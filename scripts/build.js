@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const paths = require('../config/paths');
 const configBuilder = require('../config/webpack');
 
-module.exports = async argv => {
+module.exports = async (argv) => {
   if (!existsSync(paths.projectIndexJs)) {
     console.error('`src/index.js` file does not exist.');
 

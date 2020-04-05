@@ -9,7 +9,7 @@ const babelConfig = require('./.babelrc');
 
 const paths = require('./paths');
 
-module.exports = argv => {
+module.exports = (argv) => {
   // Assemble nodemon configuration from cli options
   const nodeArgs = [];
 

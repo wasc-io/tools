@@ -1,7 +1,7 @@
 const execa = require('execa');
 const paths = require('../config/paths');
 
-module.exports = argv => {
+module.exports = (argv) => {
   const prettierArgs = [
     argv['dry-run'] ? '--list-different' : '--write',
     '--config',
@@ -14,7 +14,7 @@ module.exports = argv => {
     env: process.env,
     cwd: paths.projectRoot,
     stdio: 'inherit',
-  }).catch(error => {
+  }).catch((error) => {
     console.error('Command failed with the following error:\n');
     console.error(error);
     process.exit(1);
