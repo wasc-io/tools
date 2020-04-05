@@ -18,24 +18,20 @@ module.exports = async (argv) => {
     if (error) {
       console.error(error.stack || error);
       if (error.details) {
-        console.error(error.details);
+        console.error(...error.details);
       }
-
-      process.exit(1);
     }
 
     const info = stats.toJson();
 
     // Handle compilation errors
     if (stats.hasErrors()) {
-      console.error(info.errors);
-
-      process.exit(1);
+      console.error(...info.errors);
     }
 
     // Print any warnings before anything else
     if (stats.hasWarnings()) {
-      console.warn(info.warnings);
+      console.warn(...info.warnings);
     }
 
     console.log(
