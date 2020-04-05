@@ -17,12 +17,28 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .usage(
     '$0 <command> [options], a tool for creating front- and backend javascript projects alike, with builtin prettier, eslint and babel-compiling',
   )
-  .command('build', 'build the project using webpack-babel compiling')
+  .command(
+    'build',
+    'build the project using webpack-babel compiling',
+    (yargs) => {
+      yargs
+        .positional('entry', {
+          describe: 'entry file to overwrite src/index.js',
+          default: 'src/index.js',
+        })
+        .alias('e', 'entry');
+    },
+  )
   .command(
     'watch',
     'build and rebuild the project on source changes',
     (yargs) => {
       yargs
+        .positional('entry', {
+          describe: 'entry file to overwrite src/index.js',
+          default: 'src/index.js',
+        })
+        .alias('e', 'entry')
         .positional('debug', {
           descibe: 'enable the node debugging protocol in the nodemon process',
           alias: 'd',

@@ -28,7 +28,7 @@ module.exports = (argv) => {
       filename: 'index.js',
       libraryTarget: 'commonjs',
     },
-    entry: paths.projectIndexJs,
+    entry: paths.resolveEntry(argv.entry),
     target: 'node',
     node: false,
     externals: [

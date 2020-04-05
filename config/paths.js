@@ -8,7 +8,12 @@ const resolveProjectDirectory = (relativePath) =>
 const resolveSelfDirectory = (relativePath) =>
   path.resolve(selfRoot, relativePath);
 
+function resolveEntry(entry) {
+  return resolveProjectDirectory(entry);
+}
+
 module.exports = {
+  resolveEntry,
   projectBuild: resolveProjectDirectory('build'),
   projectIndexJs: resolveProjectDirectory('src/index.js'),
   projectRoot,
