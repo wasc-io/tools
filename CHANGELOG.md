@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/wasc-io/tools/compare/v5.0.0...v5.1.0) (2020-04-05)
+
+
+### Features
+
+* **build/watch:** make the entry point configurable ([a25bed6](https://github.com/wasc-io/tools/commit/a25bed64e0107257a337a95237780c2835682360))
+
+
+### Bug Fixes
+
+* **watch:** don't exit on syntax error but keep watching ([4a6cd15](https://github.com/wasc-io/tools/commit/4a6cd15aa119e864b91c8c829bb4f25004a4ca2c))
+
 ## [5.0.0](https://github.com/wasc-io/tools/compare/v5.0.0-beta.0...v5.0.0) (2020-03-28)
 
 ## [5.0.0-beta.0](https://github.com/wasc-io/tools/compare/v4.0.2...v5.0.0-beta.0) (2020-03-28)
