@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.2.0](https://github.com/wasc-io/tools/compare/v5.1.0...v5.2.0) (2020-04-16)
+
+
+### Features
+
+* **test:** pass cli args to jest ([760a73a](https://github.com/wasc-io/tools/commit/760a73a64338cb407deb3ab8f547ba7c4632da2e))
+
 ## [5.1.0](https://github.com/wasc-io/tools/compare/v5.0.0...v5.1.0) (2020-04-05)
 
 
