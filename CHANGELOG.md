@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.0](https://github.com/wasc-io/tools/compare/v5.2.0...v5.3.0) (2020-05-05)
+
+
+### Features
+
+* **babel:** always compile against the currently running node version ([2cbe981](https://github.com/wasc-io/tools/commit/2cbe98147e28b85f03d2e226b096f6c2772f4044))
+
 ## [5.2.0](https://github.com/wasc-io/tools/compare/v5.1.0...v5.2.0) (2020-04-16)
 
 
