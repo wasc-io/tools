@@ -76,6 +76,11 @@ module.exports = (argv) => {
           exclude: /node_modules/,
           use: [{ loader: 'graphql-import-loader' }],
         },
+        {
+          test: /\.node$/,
+          // `from` is where paths will be made relative to
+          loader: 'node-loader',
+        },
       ],
     },
     plugins: [
