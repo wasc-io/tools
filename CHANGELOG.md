@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.0](https://github.com/wasc-io/tools/compare/v5.3.0...v5.4.0) (2020-05-09)
+
+
+### Features
+
+* **webpack:** add loader for node-native modules ([2c614c2](https://github.com/wasc-io/tools/commit/2c614c200650a52253c05da800eb6eb098ec85a3))
+
 ## [5.3.0](https://github.com/wasc-io/tools/compare/v5.2.0...v5.3.0) (2020-05-05)
 
 
