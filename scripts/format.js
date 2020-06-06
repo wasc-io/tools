@@ -5,7 +5,7 @@ module.exports = (argv) => {
   const userProvidedTargets = argv._.slice(1);
 
   const targets = userProvidedTargets.length
-    ? userProvidedTargets.join(' ')
+    ? userProvidedTargets
     : `./**/*.{js,json,graphql,md,html}`;
 
   const prettierArgs = [
@@ -14,7 +14,7 @@ module.exports = (argv) => {
     paths.selfPrettierConfig,
     '--ignore-path',
     paths.selfIgnore,
-    targets,
+    ...targets,
   ];
   execa(paths.selfPrettier, prettierArgs, {
     env: process.env,
