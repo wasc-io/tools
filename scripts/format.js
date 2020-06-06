@@ -2,13 +2,19 @@ const execa = require('execa');
 const paths = require('../config/paths');
 
 module.exports = (argv) => {
+  const userProvidedTargets = argv._.slice(1);
+
+  const targets = userProvidedTargets.length
+    ? userProvidedTargets.join(' ')
+    : `./**/*.{js,json,graphql,md,html}`;
+
   const prettierArgs = [
     argv['dry-run'] ? '--list-different' : '--write',
     '--config',
     paths.selfPrettierConfig,
     '--ignore-path',
     paths.selfIgnore,
-    `./**/*.{js,json,graphql,md,html}`,
+    targets,
   ];
   execa(paths.selfPrettier, prettierArgs, {
     env: process.env,
