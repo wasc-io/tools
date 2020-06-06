@@ -6,7 +6,7 @@ module.exports = (argv) => {
 
   const targets = userProvidedTargets.length
     ? userProvidedTargets
-    : `./**/*.{js,json,graphql,md,html}`;
+    : [`./**/*.{js,json,graphql,md,html}`];
 
   const prettierArgs = [
     argv['dry-run'] ? '--list-different' : '--write',
