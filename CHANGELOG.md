@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.5.0](https://github.com/wasc-io/tools/compare/v5.4.1...v5.5.0) (2020-06-06)
+
+
+### Features
+
+* **format:** allow user to pass custom files ([d93a910](https://github.com/wasc-io/tools/commit/d93a9100716acead031fc031d402309e34bb3a67))
+
 ### [5.4.1](https://github.com/wasc-io/tools/compare/v5.4.0...v5.4.1) (2020-05-20)
 
 ## [5.4.0](https://github.com/wasc-io/tools/compare/v5.3.0...v5.4.0) (2020-05-09)
