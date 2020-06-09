@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.6.0](https://github.com/wasc-io/tools/compare/v5.5.2...v5.6.0) (2020-06-09)
+
+
+### Features
+
+* readd trailingCommas ([6ca93c7](https://github.com/wasc-io/tools/commit/6ca93c7e146f168e2553d1c54d2c91c8a2eb2c3d))
+
 ### [5.5.2](https://github.com/wasc-io/tools/compare/v5.5.1...v5.5.2) (2020-06-06)
 
 
