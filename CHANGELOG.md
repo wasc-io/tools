@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.6.2](https://github.com/wasc-io/tools/compare/v5.6.1...v5.6.2) (2020-06-20)
+
+
+### Bug Fixes
+
+* **prettier:** adjust path ([8c8f7d2](https://github.com/wasc-io/tools/commit/8c8f7d25af95bb4fe7e1bdf4e79d9c0bd6983dbf))
+
 ### [5.6.1](https://github.com/wasc-io/tools/compare/v5.6.0...v5.6.1) (2020-06-20)
 
 
