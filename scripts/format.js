@@ -4,7 +4,7 @@ const paths = require('../config/paths');
 module.exports = (argv) => {
   const userProvidedTargets = argv._.slice(1);
 
-  const targets = userProvidedTargets.length ? userProvidedTargets : [`./**`];
+  const targets = userProvidedTargets.length ? userProvidedTargets : [`.`];
 
   const prettierArgs = [
     argv['dry-run'] ? '--list-different' : '--write',
