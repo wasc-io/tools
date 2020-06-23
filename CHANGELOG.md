@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.7.0](https://github.com/wasc-io/tools/compare/v5.6.2...v5.7.0) (2020-06-23)
+
+
+### Features
+
+* **babel:** enable optional chaining ([06cc787](https://github.com/wasc-io/tools/commit/06cc787bc2b25d2d04bf91bff8db1f1acf3810e9))
+
 ### [5.6.2](https://github.com/wasc-io/tools/compare/v5.6.1...v5.6.2) (2020-06-20)
 
 
