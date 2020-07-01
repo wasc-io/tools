@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.8.2](https://github.com/wasc-io/tools/compare/v5.8.1...v5.8.2) (2020-07-01)
+
+
+### Bug Fixes
+
+* **preact:typescript:** path for typescript index ([212d0b5](https://github.com/wasc-io/tools/commit/212d0b52656f53eda62a0b377534fdf537f6798f))
+
 ### [5.8.1](https://github.com/wasc-io/tools/compare/v5.8.0...v5.8.1) (2020-07-01)
 
 ## [5.8.0](https://github.com/wasc-io/tools/compare/v5.7.0...v5.8.0) (2020-07-01)
