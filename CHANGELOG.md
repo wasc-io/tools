@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.8.0](https://github.com/wasc-io/tools/compare/v5.7.0...v5.8.0) (2020-07-01)
+
+
+### Features
+
+* **preact:** provide preact-cli plugins and configuration snippets ([81dec09](https://github.com/wasc-io/tools/commit/81dec09cdac3e06e4296e1e62aa231a1612e5de6))
+
 ## [5.7.0](https://github.com/wasc-io/tools/compare/v5.6.2...v5.7.0) (2020-06-23)
 
 
