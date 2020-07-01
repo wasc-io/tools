@@ -101,9 +101,11 @@ export function babel(config, env, helpers) {
 
 export function typescript(config) {
   // Use any `index` file, not just index.js
-  config.resolve.alias['preact-cli-entrypoint'] = resolve(
+  /* eslint-disable no-param-reassign */
+  config.resolve.alias['preact-cli-entrypoint'] = require.resolve(
     process.cwd(),
     'src',
     'index',
   );
+  /* eslint-enable no-param-reassign */
 }
