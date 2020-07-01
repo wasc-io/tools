@@ -1,6 +1,7 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import CompressionPlugin from 'compression-webpack-plugin';
 import marked from 'marked';
+import { resolve } from 'path';
 
 export function graphql(config) {
   config.module.rules.push({
@@ -102,7 +103,7 @@ export function babel(config, env, helpers) {
 export function typescript(config) {
   // Use any `index` file, not just index.js
   /* eslint-disable no-param-reassign */
-  config.resolve.alias['preact-cli-entrypoint'] = require.resolve(
+  config.resolve.alias['preact-cli-entrypoint'] = resolve(
     process.cwd(),
     'src',
     'index',
