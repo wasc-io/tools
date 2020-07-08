@@ -69,7 +69,7 @@
     "then-fs": "2.0.0",
     "typescript": "3.9.6",
     "webpack": "4.43.0",
-    "webpack-node-externals": "1.7.2",
+    "webpack-node-externals": "2.3.0",
     "yargs": "15.4.0"
   },
   "devDependencies": {
