@@ -25,11 +25,11 @@
     "source-map-support": ">0.0.0"
   },
   "dependencies": {
-    "@babel/core": "7.9.6",
-    "@babel/plugin-proposal-object-rest-spread": "7.9.6",
+    "@babel/core": "7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.10.4",
     "@babel/plugin-proposal-optional-chaining": "7.10.4",
     "@babel/plugin-transform-react-jsx-source": "7.10.4",
-    "@babel/preset-env": "7.9.6",
+    "@babel/preset-env": "7.10.4",
     "awesome-typescript-loader": "5.2.1",
     "babel-eslint": "10.1.0",
     "babel-jest": "25.5.1",
