@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.8.3](https://github.com/wasc-io/tools/compare/v5.8.2...v5.8.3) (2020-07-10)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([a052e06](https://github.com/wasc-io/tools/commit/a052e063569ad1d9e26c77da3f1c12d466867fb9))
+* **deps:** update babel monorepo to v7.10.4 ([c713fcb](https://github.com/wasc-io/tools/commit/c713fcb41865a31267a7af8137685729bbc4b536))
+* **deps:** update dependency eslint-config-airbnb to v18.2.0 ([c784a42](https://github.com/wasc-io/tools/commit/c784a42291a0559b2962499a2924e29c8808ebf6))
+* **deps:** update dependency eslint-plugin-eslint-comments to v3.2.0 ([f0b121e](https://github.com/wasc-io/tools/commit/f0b121e47c774f4ba437d21c16386e4d844b1188))
+* **deps:** update dependency eslint-plugin-import to v2.22.0 ([6cab0a1](https://github.com/wasc-io/tools/commit/6cab0a15baf7c896e86dffb0651f4002114ed266))
+* **deps:** update dependency eslint-plugin-jsx-a11y to v6.3.1 ([d1a335a](https://github.com/wasc-io/tools/commit/d1a335a799a8fd0becf26e9e2a5dddb52d694e16))
+* **deps:** update dependency eslint-plugin-prettier to v3.1.4 ([1e73a81](https://github.com/wasc-io/tools/commit/1e73a811b139f688a65075baa3c13368bdbb3722))
+* **deps:** update dependency eslint-plugin-react-hooks to v4 ([c7ac059](https://github.com/wasc-io/tools/commit/c7ac059a0ad6d9e08b0f4ab49b0d66e4353767b0))
+* **deps:** update dependency eslint-plugin-react-hooks to v4.0.7 ([fdb3674](https://github.com/wasc-io/tools/commit/fdb36746be8569cbd3ece2fb68427564c89a3c3b))
+* **deps:** update dependency execa to v4.0.3 ([c7cc531](https://github.com/wasc-io/tools/commit/c7cc531802280b829c63b90cccda2e7641a83a5e))
+* **deps:** update dependency globby to v11.0.1 ([8e84f1c](https://github.com/wasc-io/tools/commit/8e84f1c420e80d4240ea9b968bfd810592233d25))
+* **deps:** update dependency graphql to v14.7.0 ([bd38321](https://github.com/wasc-io/tools/commit/bd38321241131e02d878f5959d6e1072c9eb9555))
+* **deps:** update dependency graphql to v15 ([8ffbb3a](https://github.com/wasc-io/tools/commit/8ffbb3ac2450df367999c794834e1ab57590b5a8))
+* **deps:** update dependency graphql-tag to v2.10.4 ([9a917c4](https://github.com/wasc-io/tools/commit/9a917c476b594dfbb480043649a1885a14c50d7f))
+* **deps:** update dependency node-loader to v1 ([64e5c2e](https://github.com/wasc-io/tools/commit/64e5c2ed8a48c3d8219e9a1c520d75accd188e36))
+* **deps:** update dependency nodemon-webpack-plugin to v4.3.2 ([e45fdc3](https://github.com/wasc-io/tools/commit/e45fdc3718c9df30ed34a57670238a1c645628bf))
+* **deps:** update dependency typescript to v3.9.6 ([c450e1f](https://github.com/wasc-io/tools/commit/c450e1fe1a46c6b35a5821729ce663a70221ce46))
+* **deps:** update dependency webpack-node-externals to v2 ([772991b](https://github.com/wasc-io/tools/commit/772991b6ac703ae40edd6c9289b242bdedcf0c57))
+* **deps:** update dependency yargs to v15.4.0 ([57e41e2](https://github.com/wasc-io/tools/commit/57e41e2e6884b2bddbdac7ad3a30ae563f46db71))
+* **deps:** update jest monorepo to v26 ([17fa743](https://github.com/wasc-io/tools/commit/17fa743d71b0987d0e20e2c888d6f75d2b8509e1))
+
 ### [5.8.2](https://github.com/wasc-io/tools/compare/v5.8.1...v5.8.2) (2020-07-01)
 
 
