@@ -17,6 +17,15 @@
     "lint": "eslint -c ./config/.eslintrc.js .",
     "format": "node ./bin format"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "*{.js,jsx,ts,tsx}": "eslint -c ./config/.eslintrc.js",
+    "*.{js,json,graphql,md,html,ts,tsx}": "npm run format --"
+  },
   "bin": {
     "wasc-tools": "./bin/index.js"
   },
@@ -70,5 +79,9 @@
     "webpack": "4.43.0",
     "webpack-node-externals": "2.5.0",
     "yargs": "15.4.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11"
   }
 }
