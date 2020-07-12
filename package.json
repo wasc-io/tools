@@ -15,7 +15,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint -c ./config/.eslintrc.js .",
-    "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'"
+    "format": "node ./bin format"
   },
   "bin": {
     "wasc-tools": "./bin/index.js"
