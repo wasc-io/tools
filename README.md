@@ -14,18 +14,17 @@ yarn add -D @wasc/tools
 
 ## Usage
 
-This tools provides most of the required tools for a big JS project. It transpiles with, it lints, it pretties, it tests and it even counts lines of code. All behind an easy cli.
+This tool is straight-forward: it transpiles with, it lints, it pretties, it tests and it even counts lines of code. All behind an easy cli.
 For big projects we recommend to use the tool inside the package.json's scripts-tag:
 
 ```json
 "scripts": {
-    "start": "wasc-tools watch backend --debug",
-    "build": "wasc-tools build backend",
+    "start": "wasc-tools watch --debug",
+    "build": "wasc-tools build",
     "lint": "wasc-tools lint",
     "format": "wasc-tools format",
     "test": "wasc-tools test",
     "count": "wasc-tools count",
-    "todo": "wasc-tools todo",
 }
 ```
 
