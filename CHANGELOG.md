@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.8.4](https://github.com/wasc-io/tools/compare/v5.8.3...v5.8.4) (2020-07-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-react to v7.20.3 ([10e62e7](https://github.com/wasc-io/tools/commit/10e62e7fe0b2ac7c9d3e2eccd661e06401f6107e))
+* **deps:** update dependency webpack-node-externals to v2.5.0 ([59aecf9](https://github.com/wasc-io/tools/commit/59aecf9b843fb929e86315d29e34bc49e625df23))
+* **deps:** update dependency yargs to v15.4.1 ([0b479ae](https://github.com/wasc-io/tools/commit/0b479ae8fc2a33a24daa31c7a2e399f485589fa6))
+
 ### [5.8.3](https://github.com/wasc-io/tools/compare/v5.8.2...v5.8.3) (2020-07-10)
 
 
