@@ -15,7 +15,7 @@ if (major < 10) {
 
 const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .usage(
-    '$0 <command> [options], a tool for creating front- and backend javascript projects alike, with builtin prettier, eslint and babel-compiling',
+    '$0 <command> [options], lint, format, test and build your javascript project.',
   )
   .command(
     'build',
