@@ -15,8 +15,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint -c ./config/.eslintrc.js .",
-    "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'",
-    "bump": "standard-version"
+    "format": "prettier --config ./config/.prettierrc.json --write './**/*.{js,json}'"
   },
   "bin": {
     "wasc-tools": "./bin/index.js"
@@ -71,8 +70,5 @@
     "webpack": "4.43.0",
     "webpack-node-externals": "2.5.0",
     "yargs": "15.4.1"
-  },
-  "devDependencies": {
-    "standard-version": "8.0.1"
   }
 }
