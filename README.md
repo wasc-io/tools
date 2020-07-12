@@ -46,4 +46,26 @@ and a `prettier.config.js`:
 module.exports = require('@wasc/tools/prettier');
 ```
 
+## Preact-cli presets
+
+This exports preact-cli configuration snippets, they can be imported for a `preact.config.js` file:
+
+```javascript
+import { graphql } from '@wasc/tools/preact';
+
+export default function (...args) {
+  // Allows .graphql-file imports in your preact-project
+  graphql(...args);
+}
+```
+
+We include:
+
+- `graphql()`: import `.graphql` files
+- `markdown()`: import `.md` file which are compiled to HTML at build time
+- `compression()`: compresses the output bundles with gzip and brotli to serve static precompressed file with nginx for example
+- `staticFiles()`: statically copies robots.txt and security.txt files to the output root and `.well-known/security.txt` respectivly
+- `babel()`: adds optional-chaining and transform-react-jsx-source plugins to babel
+- `typescript()`: allows for ts/tsx entrypoint files
+
 ## [Changelog](CHANGELOG.md)
