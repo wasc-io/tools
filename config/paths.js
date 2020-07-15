@@ -21,7 +21,13 @@ module.exports = {
 
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
-  selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
+  selfPrettier: path.join(
+    [
+      require.resolve('prettier').split('/prettier/')[0],
+      'prettier',
+      'bin-prettier.js',
+    ].join('/'),
+  ),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
   selfNodeModules: resolveSelfDirectory('node_modules'),
