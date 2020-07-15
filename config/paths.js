@@ -17,16 +17,11 @@ module.exports = {
   projectBuild: resolveProjectDirectory('build'),
   projectIndexJs: resolveProjectDirectory('src/index.js'),
   projectRoot,
-  projectSrc: resolveProjectDirectory('src'),
   projectCache: resolveProjectDirectory('.cache'),
 
   selfIgnore: resolveSelfDirectory('config/.ignore'),
 
-  projectPrettier: resolveProjectDirectory('node_modules/.bin/prettier'),
-  projectJest: resolveProjectDirectory('node_modules/.bin/jest'),
-
   selfPrettier: resolveSelfDirectory('node_modules/.bin/prettier'),
-  selfJest: resolveSelfDirectory('node_modules/.bin/jest'),
 
   selfESLintConfig: resolveSelfDirectory('config/.eslintrc.js'),
   selfNodeModules: resolveSelfDirectory('node_modules'),
