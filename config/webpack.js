@@ -34,7 +34,7 @@ module.exports = (argv) => {
     externals: [
       nodeExternals({
         // load non-javascript files with extensions, presumably via loaders
-        whitelist: [/\.(?!(?:jsx?|json)$).{1,5}$/i, /@internal/],
+        allowList: [/\.(?!(?:jsx?|json)$).{1,5}$/i, /@internal/],
         modulesFromFile: true,
       }),
     ],
