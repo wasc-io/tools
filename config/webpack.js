@@ -1,3 +1,4 @@
+const { existsSync } = require('fs');
 const webpack = require('webpack');
 
 const nodeExternals = require('webpack-node-externals');
@@ -21,6 +22,13 @@ module.exports = (argv) => {
     nodeArgs.push('--inspect');
   }
 
+  const entry = paths.resolveEntry(argv.entry);
+
+  if (!existsSync(entry)) {
+    console.error(`entry: '${argv.entry}' does not exist.`);
+    process.exit(1);
+  }
+
   return {
     bail: true,
     output: {
@@ -28,7 +36,7 @@ module.exports = (argv) => {
       filename: 'index.js',
       libraryTarget: 'commonjs',
     },
-    entry: paths.resolveEntry(argv.entry),
+    entry,
     target: 'node',
     node: false,
     externals: [

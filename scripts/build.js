@@ -1,15 +1,7 @@
-const { existsSync } = require('fs');
 const webpack = require('webpack');
-const paths = require('../config/paths');
 const configBuilder = require('../config/webpack');
 
 module.exports = async (argv) => {
-  if (!existsSync(paths.projectIndexJs)) {
-    console.error('`src/index.js` file does not exist.');
-
-    process.exit(1);
-  }
-
   const config = configBuilder(argv);
   const compiler = webpack(config);
 
