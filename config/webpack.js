@@ -53,7 +53,7 @@ module.exports = (argv) => {
     },
     resolve: {
       modules: ['node_modules', paths.selfNodeModules],
-      extensions: ['.ts', '.js', '.tsx'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     },
     module: {
       rules: [
