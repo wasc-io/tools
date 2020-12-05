@@ -81,7 +81,7 @@
     "yargs": "15.4.1"
   },
   "devDependencies": {
-    "husky": "4.3.0",
+    "husky": "4.3.4",
     "lint-staged": "10.4.2"
   }
 }
