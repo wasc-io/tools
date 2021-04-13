@@ -29,6 +29,11 @@ export function markdown(config, env, helpers) {
     use: [
       {
         loader: 'html-loader',
+        options: {
+          minimize: true,
+          interpolate: true,
+          removeAttributeQuotes: false,
+        },
       },
       {
         loader: 'markdown-loader',
