@@ -1,5 +1,4 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-import CompressionPlugin from 'compression-webpack-plugin';
 import marked from 'marked';
 import { resolve } from 'path';
 
@@ -41,38 +40,6 @@ export function markdown(config, env, helpers) {
       },
     ],
   });
-}
-
-export function compression(config, env) {
-  const threshold = 0;
-  // Only if effiency is high enough
-  const minRatio = 0.8;
-  // All static files
-  const files = /\.(js|css|html|svg|json)$/;
-
-  // Too slow for dev enviroment
-  if (!env.dev) {
-    config.plugins.push(
-      new CompressionPlugin({
-        filename: '[path].br[query]',
-        algorithm: 'brotliCompress',
-        test: files,
-        // Highest level since it's one time in pipeline
-        compressionOptions: { level: 11 },
-        threshold,
-        minRatio,
-      }),
-      new CompressionPlugin({
-        filename: '[path].gz[query]',
-        algorithm: 'gzip',
-        test: files,
-        // Highest level since it's one time in pipeline
-        compressionOptions: { level: 9 },
-        threshold,
-        minRatio,
-      }),
-    );
-  }
 }
 
 export function staticFiles(config) {
