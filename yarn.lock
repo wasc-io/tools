@@ -3474,6 +3474,11 @@ eslint-plugin-eslint-comments@3.2.0:
     escape-string-regexp "^1.0.5"
     ignore "^5.0.5"
 
+eslint-plugin-fail-comment@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-fail-comment/-/eslint-plugin-fail-comment-1.0.0.tgz#2c5f819ae4baaa3613b1794ef0e402ed80c0988f"
+  integrity sha512-b8e6nbqeu9eJ5b9oVCr/TOu9sO9lLDdzk+cTV8+QKF9GdfRL0hyk3pAkyGVAqe+L8w2oTmfcyVknnMG5ffVuqQ==
+
 eslint-plugin-import@2.22.1:
   version "2.22.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz#0896c7e6a0cf44109a2d97b95903c2bb689d7702"

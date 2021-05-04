@@ -15,9 +15,13 @@ module.exports = {
     'css-modules',
     'optimize-regex',
     'no-secrets',
+    'fail-comment',
   ],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
+  },
+  rules: {
+    'fail-comment/fail-comment': [2],
   },
 };
