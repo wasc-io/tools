@@ -92,7 +92,7 @@ const argv = require('yargs') // eslint-disable-line prefer-destructuring
   .help('h')
   .alias('h', 'help')
   .alias('v', 'version')
-  .epilog(`© wasc GmbH. By Nicolai Schmid. All rights reserved.`).argv;
+  .epilog(`© Wasc UG (haftungsbeschränkt). All rights reserved.`).argv;
 
 // TODO Require Scripts individually inside yargs
 require(`../scripts/${argv._[0]}`)(argv); // eslint-disable-line import/no-dynamic-require
