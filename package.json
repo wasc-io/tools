@@ -71,7 +71,7 @@
     "progress-bar-webpack-plugin": "2.1.0",
     "sloc": "0.2.1",
     "then-fs": "2.0.0",
-    "typescript": "3.9.7",
+    "typescript": "3.9.10",
     "webpack": "4.44.2",
     "webpack-node-externals": "2.5.2",
     "yargs": "15.4.1"
