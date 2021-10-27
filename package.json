@@ -58,7 +58,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "execa": "5.1.1",
     "globby": "11.0.4",
-    "graphql": "15.7.0",
+    "graphql": "15.7.1",
     "graphql-import-loader": "0.2.1",
     "graphql-tag": "2.12.5",
     "html-loader": "2.1.2",
