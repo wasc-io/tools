@@ -1,5 +1,6 @@
 module.exports = {
   presets: [
+    require.resolve('babel-preset-preact'),
     [
       require.resolve('@babel/preset-env'),
       {
