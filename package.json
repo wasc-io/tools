@@ -43,7 +43,7 @@
     "babel-preset-preact": "^2.0.0",
     "copy-webpack-plugin": "6.4.1",
     "dotenv": "8.6.0",
-    "eslint": "6.8.0",
+    "eslint": "8.57.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-css-modules": "2.11.0",
