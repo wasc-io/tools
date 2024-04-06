@@ -75,7 +75,7 @@
     "typescript": "3.9.10",
     "webpack": "4.47.0",
     "webpack-node-externals": "2.5.2",
-    "yargs": "15.4.1"
+    "yargs": "17.7.2"
   },
   "devDependencies": {
     "husky": "6.0.0",
