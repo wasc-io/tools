@@ -73,7 +73,7 @@
     "sloc": "0.3.2",
     "then-fs": "2.0.0",
     "typescript": "3.9.10",
-    "webpack": "4.46.0",
+    "webpack": "4.47.0",
     "webpack-node-externals": "2.5.2",
     "yargs": "15.4.1"
   },
