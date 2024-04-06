@@ -70,7 +70,7 @@
     "nodemon-webpack-plugin": "4.8.2",
     "prettier": "2.8.8",
     "progress-bar-webpack-plugin": "2.1.0",
-    "sloc": "0.2.1",
+    "sloc": "0.3.2",
     "then-fs": "2.0.0",
     "typescript": "3.9.10",
     "webpack": "4.46.0",
